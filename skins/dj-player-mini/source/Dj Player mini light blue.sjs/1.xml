@@ -1,0 +1,65 @@
+<!-- Silverjuke DJ 2 Player -->
+<img x=0 y=0 src="player2.png" />
+<img x=0 y=0 src="player1.png" />
+
+<if cond="shaped">
+    <button x=7 y=126  src="4.png" srcindex=4 target="config" cmw=13 />
+    <button x=7 y=next  src="4.png" srcindex=2 target="quit" />
+    <button x=7 y=next-2  src="4.png" srcindex=0 target="minimize"  />
+   
+</if> 
+    <box x="385" y="20" w="245" h="14" fgcolor="#CCCCCC" id="playlistlength" />
+    <color fgcolor=#6894FF target="selection" />
+    </box> 
+    <box x=385 y=42 w=245 h=14 fgcolor="#CCCCCC" id="playlistremainlength" />
+    <color fgcolor=#6894FF target="selection" />
+    </box> 
+    <box x=350 y=65 w=140 h=14 fgcolor="#CCCCCC" id="TestGenre" />
+    <color fgcolor=#6894FF target="selection" /> 
+    </box>
+    <box x=350 y=89 w=40 h=14 fgcolor="#CCCCCC" id="YearTest" />
+    <color fgcolor=#6894FF target="selection" /> 
+    </box>
+    <box x=next y=same w=40 h=14 fgcolor="#CCCCCC" target="currtime" />
+    <color fgcolor=#6894FF target="selection" />
+    </box> 			
+    <box x=next y=same w=30 h=14 fgcolor="#CCCCCC" id="playlisttotalnumber" />
+    <color fgcolor=#6894FF target="selection" />
+    </box> 
+<box x="18" y="19" w="315" h="15" fgcolor="#CCCCCC" target="CurrTrack" />
+<color fgcolor=#6894FF target="selection" />
+</box>  
+<box x="same" y="next+1" w="315" h="15" fgcolor="#CCCCCC" id="album" />
+<color fgcolor=#6894FF target="selection" /> 
+</box>
+<box x="same" y="next+9" w="300" h="14" fgcolor="#CCCCCC" target="line00" centeroffset="-29">
+<color fgcolor=#6894FF target="selection" />
+</box> 
+<box x="same" y="next" w="same" h="same" fgcolor="#CCCCCC" target="line01" centeroffset="-29">
+<color fgcolor=#6894FF target="selection" /> 
+</box>
+<box x="same" y="next" w="same" h="same" fgcolor="#CCCCCC" target="line02" centeroffset="-29">
+<color fgcolor=#6894FF target="selection" /> 
+</box> 
+
+<scrollbar x=469 y=13 h=178 src="6.png" target="volslider" />  
+<scrollbar x=13 y=154 h=32 w=298 src="7.png" target="seek" hideifunused"1"/>       
+<button x=33 y=128 src="2.png"srcindex="0" target="prev" />
+<button x=86 y=128 src="2.png"srcindex="1" target="next" />
+<button x=316  y=112  src="1.png"srcindex="1" target="stop" />
+<button x=393  y=112 src="1.png"srcindex="0" target="play" />
+
+<button x=139  y=128 src="2.png"srcindex="2" target="searchprev" onclick="if ((player.duration-player.time)>10100){player.time+=10000;}else{player.time=player.duration;}" />   
+<button x=192  y=128 src="2.png"srcindex="3" target="searchnext" onclick="if ((player.duration-player.time)>10100){player.time+=10000;}else{player.time=player.duration;}" />   
+<button x=243  y=110 src="3.png"srcindex="0" target="openfiles" />
+<button x=243  y=135 src="3.png"srcindex="1" target="unqueueall" />
+<button x="next+1" y="110" src="3.png"srcindex="2" target="saveplaylist" />
+<button x="323" y="57" src="8.png" target="displayup"/>
+<img x=328 y=73 src="pfeil.png" />
+<button x="323" y="89" src="8.png" target="displaydown"/>
+                    	
+	
+	</if>
+	<else>
+ 
+    

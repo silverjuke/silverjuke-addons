@@ -1,0 +1,22 @@
+Eagle Touch TODO
+================
+BUGS
+- Album Art on search results screen always shows first hit (temporarily disabled) / Search screen thumbnails mustn't be identical to initial thumbnail
+- allow_edit_queue in skin options dialog doesn't work as expected
+- An empty square appears around the queue area in the player of the acer atom testbed
+- If player is paused and a track is being added the queue is being deleted (bug comes from original Eagle Blue Touch already)
+
+Joachim's ToDo list
+===================
+- Only prompt for confirmation if an album is being queued if corresponding config option is checked
+- Highlight letter of the cover page the user is on
+- Add color pickers or color selection for fonts
+- Use tasklist to figure out wether a task is running and only kill it if applicable
+- Convert targeted boxes to display the time into functions to eliminate black phantom boxes (bug!)
+- Convert DrawCover function to actually work as expected as far as search and queue display are concerned
+- Display thumbnails in search results (pre-requisite: DrawCover works as expected)
+- Display thumbnails on queue screen (pre-requisite: DrawCover works as expected)
+- Add page titles to all pages except cover screen
+- Convert current queue message into a message on the screen that goes away after some time has elapsed
+- Add "back" button to search screen
+

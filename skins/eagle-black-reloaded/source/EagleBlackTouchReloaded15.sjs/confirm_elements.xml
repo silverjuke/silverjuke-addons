@@ -1,0 +1,6 @@
+
+<button x=50%-498 y=50%+44 src="bigbutton_back.png" onclick="ConfirmExit();" />
+<img x=same y=same src="icon_exit.png" />
+
+<button x=50%+402 y=same src="bigbutton_ok.png" onclick="ConfirmOk();" />
+<img x=same y=same src="icon_ok.png" />

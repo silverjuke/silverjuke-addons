@@ -1,0 +1,33 @@
+
+<if cond="shaped">
+    <button x=100%-114 y=4    w=30   h=30   src="windowbuttons.png" srcindex=0 target="minimize" />
+	<button x=100%-77  y=same w=same h=same src="windowbuttons.png" srcindex=1 target="maximize" />
+	<button x=100%-40  y=same w=same h=same src="windowbuttons.png" srcindex=2 target="quit" />
+	<button x=100%-308 y=same w=same h=same src="windowbuttons.png" srcindex=3 onclick="Config()" />
+	<button x=100%-271 y=same w=same h=same src="windowbuttons.png" srcindex=5 onclick="LocalConfig()" />
+	<button x=100%-234 y=same w=same h=same src="windowbuttons.png" srcindex=4 target="config" cmw=20 />
+	<button x=100%-197 y=same w=same h=same src="windowbuttons.png" srcindex=6 onclick="AboutSkin()" />
+	<button x=100%-160 y=same w=same h=same src="windowbuttons.png" srcindex=7 onclick="StartKiosk()" />
+
+	<resizer x=100%-14 y=100%-14 w=12 h=12 />
+	<img    x=same     y=same src="resize.png" />
+	<button w=30 h=30 src="windowbuttons.png" srcindex=2 onClick="Filter('');CoversMode()" />
+</if>
+
+
+<if cond="creditsystem">
+    <box x=50%   y=4    w=60 h=16 fgcolor=#FFFFFF hicolor=#FFFFFF id="credit_label" />
+    <box x=next y=same  w=30 h=16 fgcolor=#FFFFFF hicolor=#FFFFFF target="currcredit" />
+</if>
+
+<if cond="volume">
+	<box       x=5       y=62  w=46 h=230 fgcolor=#333333 bgcolor=#000000 border=1 />
+	<img       x=same    y=same-25  src="vol_top.png" />
+	<scrollbar x=same+1  y=same   h=280 src="vol_scroll.png" target="volslider" />
+	<img       x=same-1  y=same+252 src="vol_bottom.png" />
+</if>
+
+<box x="40" y="4" w="360" h="16" fgcolor="#FFFFFF" id="queue_message" >
+</box>
+
+

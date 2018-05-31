@@ -1,0 +1,28 @@
+<div x=56 y=20 w=100%-116 h=100%-38>
+    <include src="rect_white.xml" />
+</div>
+<div x=same+2 y=same+2 w=same-4 h=same-4>
+    <include src="rect_dark.xml" />
+</div>
+<box x=same+4 y=same+4 w=same-8 h=same-8 bgcolor=#000000 />
+
+<img x=100%-92 y=100%-623 src="mediumbutton_frame.png" />
+<img x=100%-92 y=100%-553 src="mediumbutton_frame.png" />
+<img x=100%-92 y=100%-483 src="mediumbutton_frame.png" />
+
+<img x=4 y=100%-402 src="bigbutton_frame.png" />
+<img x=100%-112 y=same src="bigbutton_frame.png" />
+
+<img x=100%-72 y=100%-151 src="mediumbutton_frame.png" />
+
+<button x=100%-70 y=100%-148 src="mediumbutton.png" onclick="SearchExit()" />
+<img x=same+9 y=same+10 src="icon_magnifier.png" />
+<img x=same+3 y=same+3 src="icon_cross.png" />
+
+<button x=8 y=100%-398 src="bigbutton.png" onclick="SearchPrev();" />
+<img x=same-4 y=same src="icon_left.png" />
+
+<button x=100%-108 y=same src="bigbutton.png" onclick="SearchNext();" />
+<img x=same+4 y=same src="icon_right.png" />
+
+<include src="overlay.xml" />

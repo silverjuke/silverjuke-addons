@@ -1,0 +1,250 @@
+[2013-10-19][JM] FIX: Display current radio station when switching between cover and radio screen instead of pause screen
+[2013-10-19][JM] FIX: Add mechanism to only start a new instance of the radio player if it isn't already running (using OS method "tasklist")
+[2013-10-14][JM] FIX: Playlist is no longer being hidden if player is paused
+[2013-11-12][JM] CHG: Increased width and heigth of message box
+[2013-11-12][JM] NEW: Added pause/resume for webradio playback by saving current radio station in skin config settings
+[2013-11-12][JM] NEW: Added sort buttons to radio screen: available sort options are by genre, by country, favorites only. Default sorting is alphabetically by station name
+[2013-11-11][JM] CHG: Added several international radio stations
+[2013-10-07][JM] FIX: Refresh Player on radio screen when new song is played
+[2013-11-07][JM] CHG: Changed permission for queue display to respect SJ settings
+[2013-11-07][JM] CHG: Increased player width to match cover selection area if there is enough room (i.e. if search and visualization buttons are disabled)
+[2013-11-06][JM] NEW: Visualize in player what section can be touched to edit the queue or pause the player by adding white borders if applicable
+[2013-11-06][JM] CHG: Changed white borders to grey borders to point out that white means clickable/touchable
+[2013-11-05][JM] NEW: Added flags for webradio country display
+[2013-11-04][JM] NEW: Added webradio config section
+[2013-11-03][JM] NEW: Added webradio edit button in window mode to add new stations or edit existing ones
+[2013-11-03][JM] NEW: Added icon support to webradio
+[2013-11-02][JM] CHG: Changed Webradio interface to match the look of the cover layout
+[2013-10-31][JM] REL: Release of EagleBlackTouch Reloaded v14
+[2013-10-31][JM] NEW: Added webradio functionality that pauses the silverjuke player
+[2013-10-23][JM] NEW: Added screen to edit the queue
+[2013-10-17][JM] CHG: Changed reference from BlueTouch to BlackTouch in header of skin code files
+[2013-10-17][JM] NEW: Added button in window mode to immediately start kiosk mode
+[2013-10-14][JM] FIX: Changed column width on track selection screen to match the font size used
+[2013-10-14][JM] CHG: Increased size of track selection screen to occupy the entire screen
+[2013-10-13][JM] FIX: Removed square brackets from keyboard layouts to avoid error message about broken regex
+[2013-09-13][JM] CHG: Simplified English keyboard layout by converting to uppercase
+[2013-10-12][JM] FIX: Fixed error message when English is selected about missing keyoboard file en_GB.sj
+[2013-10-11][JM] REL: Release of EagleBlackTouch Reloaded v13
+[2013-10-08][JM] NEW: Display remaining time, played time and total length of active title in player section at bottom if corresponding SJ option (kiosk mode -> functionality -> toggle time) is checked
+[2013-10-08][JM] FIX: Fixed limitations of tracks display not being taken into account when calculating the total number of remaining tracks on the track selection screen
+[2013-09-23][JM] CHG: Simplified German keyboard layout by converting to uppercase
+[2013-09-23][JM] CHG: Select karaoke music selection from all available selections in skin config instead of having to create selections with a particular name
+[2013-09-21][JM] CHG: Rebuilt config section to actually allow toggling SJ settings that have an impact on the skin
+[2013-09-03][JM] CHG: Moved karaoke switch to the right to avoid conflicts with volume controls on lower resolutions
+[2013-09-03][JM] CHG: Internationalization and repositioning of credits display
+[2013-09-02][JM] CHG: Converted horizontal volume slider into vertical control
+[2013-08-25][JM] CHG: Split copyright section from configuration dialog into separate "about" dialog
+[2013-08-17][JM] REL: Release of EagleBlackTouch Reloaded v12
+[2013-08-17][JM] FIX: Removed previous-button, as it doesn't do anything
+[2013-08-16][JM] NEW: Optionally display length of each title on track selection screen, depending on SJ settings (kiosk mode -> functionality -> toggle time)
+[2013-08-16][JM] NEW: Optionally display rating
+[2013-08-15][JM] CHG: Increased size of tracks and confirmation screens
+[2013-08-14][JM] NEW: Added optional display of genre on cover and track selection screen
+[2013-08-14][JM] CHG: Hid unneeded button on search screen
+[2013-08-14][JM] CHG: Added single-lined square surrounding covers, search, track and confirmation screen
+[2013-08-13][JM] CHG: Only disply search icon if corresponding SJ option is checked (kiosk mode -> functionality -> search)
+[2013-08-12][JM] CHG: Reduced number of buttons by replacing the two karaoke buttons with one karaoke on/off button
+[2013-08-09][JM] FIX: Fixed missing translation string on search screen
+[2013-08-09][JM] FIX: Only warn about maximum size of queue if corrsponding SJ option is enabled
+[2013-08-09][JM] CHG: Edited volume control visually
+[2013-08-09][JM] CHG: Increased size of window controls for better touch control
+[2013-08-09][JM] CHG: Swapped colors of previous/next control
+[2013-08-09][JM] CHG: Edited scrollbar control
+[2013-08-06][JM] CHG: Swapped places of jump buttons and progress bar, as the jump buttons belong to the cover section at the top and the progress bar belongs to the player section at the bottom
+[2013-08-06][JM] CHG: Removed surrounding white lines that consumed too much space
+[2013-08-09][JM] REL: Release of EagleBlackTouch Reloaded v11
+[2013-07-30][JM] NEW: Added dialog to resize album track counter display
+[2013-07-30][JM] NEW: Display a status message that goes away by itself after having added a single track album, e.g. "Track foo - bar" has been queued
+[2013-07-30][JM] FIX: Album Date now appears properly if font size set over 16 (http://www.silverjuke.net/forum/posting.php?mode=quote&p=15950)
+[2013-07-10][JM] CHG: Changed notation of SQL queries
+[2013-07-01][JM] REL: Release of EagleBlackTouch Reloaded v10
+[2013-06-27][JM] FIX: Display tracknumbers even if the tracknumber data do not exist in ID3-Tags
+[2013-06-27][JM] FIX: Order tracknumbers by discnumber (if discnumbers are used)
+[2013-06-24][JM] CHG: Track number display background width correlates to the font size used
+[2013-06-24][JM] CHG: Removed grid frame background
+[2013-06-06][JM] NEW: Created new letter buttons
+[2013-06-06][JM] FIX: Undid buggy status window code changes, increasing version count to 10
+[2013-05-23][JM] NEW: Implement fading status window
+[2013-05-22][JM] REL: Release of EagleBlackTouch Reloaded v08
+[2013-05-21][JM] NEW: No longer truncate artist and album name on track selection screen, but made it two rows high instead, so even longer names will fit
+[2013-05-21][JM] NEW: Only display up/down arrows on tracks page if there actually is at least one more record to display
+[2013-05-20][JM] CHG: Using case in SQL commands to uppercase for best practice reasons and better readability of code
+[2013-05-20][JM] NEW: Added optional track count per album display
+[2013-05-20][JM] NEW: Created a German readme.txt (liesmich.txt)
+[2013-05-16][JM] CHG: Changed support URLs
+[2013-05-16][JM] CHG: Added translation string for "one more track available"
+[2013-05-12][JM] REL: Initial release of EagleBlackTouch Reloaded (v07)
+[2013-05-09][JM] NEW: Display number of tracks on the next screen when selecting tracks
+[2013-05-09][JM] CHG: Merged changelog.txt and version.txt into one file
+[2013-05-09][JM] NEW: Tranfered hard coded text on caching page to translated content
+[2013-05-09][JM] CHG: Increased width of search keyboard section to match width of player
+[2013-05-07][JM] NEW: Optional volume preset for kiosk mode
+[2013-05-07][JM] CHG: Increased dimensions of previous/next buttons for better usability with touch screens
+[2013-05-07][JM] FIX: Save language and keyboard layout settings during keyboard initialization
+[2013-05-06][JM] NEW: Font face changeable (silverjuke settings), changing requires silverjuke restart
+[2013-05-06][JM] NEW: Added translation for keyboard layout error
+[2013-05-06][JM] NEW: Added translation for search fontsize dialog
+[2013-05-04][JM] NEW: If there is only one track inside an album, then display a "single" symbol on top of the cover art if confirmation is off
+[2013-05-02][JM] CHG: Moved track list up to match the vertical position of the cover art
+[2013-05-03][JM] FIX: Only display year if there actually is a year record available
+[2013-04-30][JM] CHG: Reversed order of title and artist in queue view to reflect the order used everywhere else in this skin
+[2013-04-29][JM] CHG: Replaced hard-coded text for default screen config option with translation
+[2013-04-29][JM] NEW: Added year to track selection screen
+[2013-04-29][JM] CHG: Moved Cover art to top on track selection screen
+[2013-04-29][JM] CHG: Turned reference to font face into variable as a preparation for a real config option
+[2013-04-29][JM] CHG: Removed unneeded files
+[2013-04-29][JM] NEW: Added config option to display/hide year
+[2013-04-17][JM] NEW: Always display album year underneath cover no matter how many characters the album name has
+[2013-04-17][JM] CHG: Display year in player in a new line of it's own
+[2013-04-17][JM] NEW: Added resizer image.
+[2013-04-17][JM] FIX: Display resizer only if not using fullscreen
+[2013-04-17][JM] CHG: Display compilation album artist "Various" in another color
+[2013-04-17][JM] CHG: Decreased the width of the frames around cover art
+[2013-04-16][JM] NEW: Added colors for titles, artist and album names
+[2013-04-16][JM] NEW: Added icon for volume control
+[2013-04-15][JM] CHG: Changed volume slider look
+[2013-04-15][JM] CHG: Changed look of title scrollbar
+[2013-04-15][JM] CHG: Increased width of player section
+[2013-04-14][JM] NEW: Changed inconsistent behaviour of tracks display in compilation albums: now only one line per track is needed no matter if an album comes from one artist or if's a compilation
+[2013-04-14][JM] CHG: Increased width of track list screen
+[2013-04-14][JM] CHG: Moved queue display a bit up, decreased font size and increased number of items
+[2013-04-14][JM] CHG: Increased width of player section to display longer names
+[2013-04-14][JM] CHG: Changed color of screen controls at top right
+[2013-04-12][JM] NEW: Changed color of all buttons from blueish glass effect to flat grey
+[2013-04-10][JM] CHG: Changed background color scheme to all black background
+[2013-04-08][JM] NEW: Changed default cover image for missing album art
+[2013-04-03][JM] CHG: Reduced unused space on album art caching screen and moved message to the very bottom
+[2011-10-07][SE] REL: Release of Eagle Blue Touch version 3.0-b8 by SilverEagle
+[2011-10-06][SE] FIX: fixed message screen bug
+[2011-10-06][SE] CHG: spaced jump buttons bit further apart, made spacing scale with skinsize
+[2011-10-06][SE] FIX: fixed bug with displaying ampersand
+[2011-10-06][SE] FIX: error-less handling of switching to the skin (switching from still bit iffy)
+[2011-10-06][SE] NEW: new keyboard button design
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 3.0-b7 by SilverEagle
+[????-??-??][SE] CHG: skin is packaged as normal *.sjs file instead of directory
+[????-??-??][SE] CHG: removed need for external id3lib
+[????-??-??][SE] CHG: removed need for external keyboard definitions
+[????-??-??][SE] CHG: skin uses correct keyboardlayout as selected for native virtual keyboard
+[????-??-??][SE] CHG: made skin ignore mousedragging while clicking on buttons
+[????-??-??][SE] CHG: library uses temp directory as set by silverjuke (size limit is _not_ respected)
+[????-??-??][SE] NEW: added 'karaoke mode' buttons to select between two Music Selections "Karaoke Off" and "Karaoke On"
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 3.0-b6
+[????-??-??][SE] CHG: simplified searchmode interface to four buttons
+[????-??-??][SE] CHG: changed search results layout to match standard artist/album/track order
+[????-??-??][SE] CHG: added setting to respect kiosmode limitations outside kioskmode
+[????-??-??][SE] NEW: made layout image & fontsizes configurable
+[????-??-??][SE] CHG: improved settings dialog
+[????-??-??][SE] CHG: fixed bug searching for quotes
+[????-??-??][SE] FIX: fixed bug with dead keyboard keys giving error
+[????-??-??][SE] NEW: added optional button to start vis/karaoke
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 3.0-b5
+[????-??-??][SE] NEW: search for multiple words
+[????-??-??][SE] NEW: matches in search results are coloured
+[????-??-??][SE] NEW: keyboard support (for now only in 'jump to A-Z' and 'search input')
+[????-??-??][SE] NEW: added option for slow machines to only start searching after enter/OK
+[????-??-??][SE] CHG: improvements in locating cover-art, should now match native behaviour very closely (known issue: only external JPG image files)
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 3.0-b4
+[????-??-??][SE] CHG: total rewrite of search results page
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 3.0-b3
+[????-??-??][SE] FIX: made pre-caching working again
+[????-??-??][SE] CHG: bit more improvements with finding correct albumart
+[????-??-??][SE] FIX: made creditsystem more robust (for instance when inserting coin while "no more credits" is shown the skin tries to queue the album or track again
+[????-??-??][SE] CHG: some improvements in handling of compilations
+[????-??-??][SE] CHG: fixed pausing/playing if clicked-on-bottom half
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 3.0-b2
+[????-??-??][SE] FIX: fixed issues with albumart from inside MP3's not displaying
+[????-??-??][SE] FIX: fixes pre-caching error
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 3.0-b1
+[????-??-??][SE] NEW: experimental rewrite with new graphics library
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 2.05
+[????-??-??][SE] FIX: fixed bug in search all option
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 2.04
+[????-??-??][SE] NEW: added option to allow search in all tracks while kioskmode browse is limited to a set music selection
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 2.03
+[????-??-??][SE] FIX: fixed bug with A-Z jumping with music selection active in kioskmode not ending up on correct album
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 2.02
+[????-??-??][SE] FIX: fixed return from timed visualisation (was not possible)
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 2.01
+[????-??-??][SE] CHG: automatically show configuration screen upon entry when saved by a different skin version
+[????-??-??][SE] CHG: when credit is added while no-credits message shows the skin jumps to the track/album confirm screen
+[????-??-??][SE] CHG: idle timer to jump to main screen after x secs inactivity
+[????-??-??][SE] NEW: added QWERTZ version
+[????-??-??][SE] CHG: added 100% screensize visualization area, respect SJ x-minutes auto visualization setting
+[2010-05-10][SE] REL: Release of Eagle Blue Touch version 2.00
+[????-??-??][SE] NEW: rescalable with configurable coverzoom and covercount
+[????-??-??][SE] NEW: QWERTY keyboard for search
+[????-??-??][SE] CHG: usermessages in native skinstyle window
+[????-??-??][SE] CHG: removed shaped window mode when not in kioskmode (will only return if SJ will support additional besides subtractive shapes)
+[????-??-??][SE] CHG: show track-artist in queuedisplay (was artist-track)
+[????-??-??][SE] NEW: option to queue complete album
+[????-??-??][SE] NEW: support 'avoid double tracks waiting in queue' setting
+[2010-05-07][SE] REL: Release of Eagle Blue Touch version 1.12
+[????-??-??][SE] FIX: fixed ugly bug: kiosk limit search was always respected even when deactivated
+[????-??-??][SE] CHG: made search result always start at first album for initial search
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 1.11
+[????-??-??][SE] NEW: added support for "manually queued tracks interrupt autoplay"
+[????-??-??][SE] FIX: fixed bug where queue limit value was always respected even though inactivated
+[????-??-??][SE] CHG: made queuelimit only active in kioskmode
+[????-??-??][SE] NEW: added credits display
+[????-??-??][SE] REL: Release of Eagle Blue Touch version 1.1
+[????-??-??][SE] NEW: needs SJ 2.73 or higher
+[????-??-??][SE] NEW: added support for credit system
+[????-??-??][SE] NEW: added support for autoplay
+[????-??-??][SE] CHG: maximum queuelength is now read from global SJ settings instead of private setup
+[????-??-??][SE] NEW: added several startup tests & warnings for wrong settings or wrong SJ version
+[????-??-??][SE] CHG: kiosmode limiting music search is now respected
+[2010-03-02][SE] REL: Release of Eagle Blue Touch version 1.01
+[????-??-??][SE] FIX: bugfix: after azkey the right button was always deactivated
+[2010-02-18][SE] REL: Release of Eagle Blue Touch version 1.0 - contest release
+[2010-02-04][SE] REL: Release of Eagle Blue Touch version 0.7
+[????-??-??][SE] NEW: added searchfacility
+[????-??-??][SE] CHG: changed clickdetection, avoids screenflicker
+[????-??-??][SE] FIX: fixed display of 'no matches in tempfilter'
+[????-??-??][SE] FIX: fixed display of wrong cover when confirming a single-song selection while searching
+[????-??-??][SE] NEW: added 0-9, space, backspace buttons for search
+[????-??-??][SE] NEW: added real search button
+[????-??-??][SE] NEW: added workspace up/down buttons while searching
+[????-??-??][SE] NEW: made left/right buttons inactive when not usable
+[????-??-??][SE] NEW: search does now reset to first cover found when searchstring is changed
+[????-??-??][SE] NEW: added mini SJ/menu/minimize/maximize/close buttons (outside kioskmode)
+[????-??-??][SE] CHG: renamed to 'Eagle BlueTouch'
+[????-??-??][SE] CHG: made confirmation for adding while searching optional as well
+[2010-02-04][SE] REL: Release of Eagle Touch version 0.6
+[????-??-??][SE] CHG: enlarged active area of topright icons, prev/next buttons and seekbar
+[????-??-??][SE] FIX: fixed timedisplay minutes to have 60 seconds instead of 100...
+[????-??-??][SE] FIX: albumyear '0' is not displayed anymore
+[????-??-??][SE] CHG: added some script comments
+[????-??-??][SE] NEW: added optional album art caching at program start
+[????-??-??][SE] FIX: fixed bug which allowed dragging of covers after switch to kioskmode to break the program
+[????-??-??][SE] CHG: improved readme
+[2010-02-01][SE] REL: Release of Eagle Touch version 0.5
+[????-??-??][SE] NEW: added warning about zoom & font defaults in configscreen
+[????-??-??][SE] FIX: fixed weird exception error bug that happend when timer was running and this skin was selected and id="info" was set
+[????-??-??][SE] CHG: improved confirmation screen
+[????-??-??][SE] NEW: added configurable polling speed
+[????-??-??][SE] NEW: added SJ config button
+[2010-01-26][SE] REL: Release of Eagle Touch version 0.4
+[????-??-??][SE] NEW: added program check for required kiosk functionalities
+[????-??-??][SE] CHG: warnings & protections for invalid viewmodes
+[????-??-??][SE] NEW: added confirmation screen
+[????-??-??][SE] CHG: improved 'now playing' info and dedicated 'stopped' screen
+[????-??-??][SE] CHG: improved configuration editor, removed required restart for all modifications
+[????-??-??][SE] CHG: added runaway-timer-bug workaround
+[????-??-??][SE] NEW: added windows & settings buttons when not kioskmode
+[????-??-??][SE] NEW: added prev/seek/next controls (in kiosmode respecting the SJ settings)
+[2010-01-23][SE] REL: Release of Eagle Touch version 0.3
+[????-??-??][SE] CHG: mockup graphics replaced with real design
+[????-??-??][SE] CHG: removed confirmation screen
+[????-??-??][SE] NEW: configurable queuesize (including unlimited & shopmode)
+[2010-01-19][SE] REL: Release of Eagle Touch version 0.2
+[????-??-??][SE] CHG: removed need for user-configures music selection
+[????-??-??][SE] CHG: moved script constants to a separate config.xml file so people just skinning have only to touch xml layout files, not sj script files
+[????-??-??][SE] NEW: added version number on all screens
+[????-??-??][SE] CHG: bit faster (no temporary database table used anymore)
+[????-??-??][SE] CHG: small cosmetic changes
+[????-??-??][SE] NEW: added shopmode (initially set in config.xml) to disable the queue, any song selected will play straight away
+[????-??-??][SE] NEW: added some freaky boot screen for my own amusement :-)
+[????-??-??][SE] NEW: added feedback/confirmation screen for playing
+[????-??-??][SE] NEW: searching mechanism build in (not enabled yet)
+[2010-01-18][SE] REL: Release of Eagle Touch version 0.1 - initial release

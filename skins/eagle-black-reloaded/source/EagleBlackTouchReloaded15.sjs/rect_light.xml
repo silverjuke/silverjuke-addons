@@ -1,0 +1,3 @@
+<img h=100% src="rect_light_left.png" />
+<box x=next w=100%-32 h=same bgcolor=#000000 />
+<img x=next h=same src="rect_light_right.png" />

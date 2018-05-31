@@ -1,0 +1,6 @@
+
+<button x=50%+92 y=4        src="bigbutton.png"          onclick="TracksPageUp();"    />
+<img    x=same   y=same-4   src="icon_up.png"                                         />
+
+<button x=50%+92 y=100%-108 src="bigbutton.png"          onclick="TracksPageDown();"  />
+<img    x=same   y=same+4   src="icon_down.png"                                       />

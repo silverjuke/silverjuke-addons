@@ -1,0 +1,5 @@
+
+<!--<button x=50%-564 y=100%-320 src="bigbutton.png"       onclick="CoversMode();" />-->
+<button x=8 y=100%-320 src="bigbutton.png"       onclick="CoversMode();" />
+<img    x=same    y=same     src="icon_exit.png"                               />
+

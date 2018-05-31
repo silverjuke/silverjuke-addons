@@ -1,0 +1,23 @@
+	<div w="100%" h="73">
+		<box x="0" y="0" w="100%" h="100%" bgcolor="#000000" />
+		
+
+
+		<if cond="shaped">
+			<!<button x="30" y="5" target="mainmenu" cmw="76" src="title-menu.png" />
+			<if cond="!kiosk">
+				
+				<button x="100%-90" target="minimize" src="title-right.png" srcindex="0" />
+				<button x="next" target="maximize" src="title-right.png" srcindex="1" />
+				<button x="next" target="quit" src="title-right.png" srcindex="2" />
+			</if>
+		
+		<if cond="kiosk">
+				<button x="5" y="5" src="title-menu.png" srcindex="0" target="togglekiosk"/>
+			</if>
+		</else>
+		<button x="5" y="5" src="title-menu.png" srcindex="0" target="togglekiosk"/>
+		</else>
+		
+		
+

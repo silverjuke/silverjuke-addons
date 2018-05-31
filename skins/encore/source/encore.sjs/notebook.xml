@@ -1,0 +1,38 @@
+	
+
+
+		
+<!-- a-z bar -->
+
+<button x="100%-185" y="50%-320" src="ZA-42.png" target="gotoA" />
+<button x="same" y="next" src="ZB-42.png" target="gotoB" />
+<button x="same" y="next" src="ZC-42.png" target="gotoC" />
+<button x="same" y="next" src="ZD-42.png" target="gotoD" />
+<button x="same" y="next" src="ZE-42.png" target="gotoE" />
+<button x="same" y="next" src="ZF-42.png" target="gotoF" />
+<button x="same" y="next" src="ZG-42.png" target="gotoG" />
+<button x="same" y="next" src="ZH-42.png" target="gotoH" />
+<button x="same" y="next" src="ZI-42.png" target="gotoI" />
+<button x="same" y="next" src="ZJ-42.png" target="gotoJ" />
+<button x="same" y="next" src="ZK-42.png" target="gotoK" />
+<button x="same" y="next" src="ZL-42.png" target="gotoL" />
+<button x="same" y="next" src="ZM-42.png" target="gotoM" />
+<button x="same" y="next" src="ZN-42.png" target="gotoN" />
+<button x="next-2" y="50%-300" src="ZO-42.png" target="gotoO" />
+<button x="same" y="next" src="ZP-42.png" target="gotoP" />
+<button x="same" y="next" src="ZQ-42.png" target="gotoQ" />
+<button x="same" y="next" src="ZR-42.png" target="gotoR" />
+<button x="same" y="next" src="ZS-42.png" target="gotoS" />
+<button x="same" y="next" src="ZT-42.png" target="gotoT" />
+<button x="same" y="next" src="ZU-42.png" target="gotoU" />
+<button x="same" y="next" src="ZV-42.png" target="gotoV" />
+<button x="same" y="next" src="ZW-42.png" target="gotoW" />
+<button x="same" y="next" src="ZX-42.png" target="gotoX" />
+<button x="same" y="next" src="ZY-42.png" target="gotoY" />
+<button x="same" y="next" src="ZZ-42.png" target="gotoZ" />
+<button x="same" y="next" src="Z09-42.png" target="goto0" />
+<!<button x="same" y="next+3" src="18.png" target="gotocurr" />
+
+
+
+		

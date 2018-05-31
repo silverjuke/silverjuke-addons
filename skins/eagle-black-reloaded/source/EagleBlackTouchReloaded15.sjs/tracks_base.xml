@@ -1,0 +1,10 @@
+
+<!--<div x=50%-512 y=50 w=1020 h=100%-104>-->
+<div x=56 y=50 w=100%-70 h=100%-104>
+    <include src="rect_white.xml" />
+</div>
+
+<div x=same+2 y=same+2 w=same-4 h=same-4>
+    <include src="rect_light.xml" />
+</div>
+

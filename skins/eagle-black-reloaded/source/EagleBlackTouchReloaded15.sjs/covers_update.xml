@@ -1,0 +1,30 @@
+
+<div x=80 y=100%-49 w=100%-90 h=48>
+    <if cond="editqueue">
+		<box       x=16       y=0    w=100%-84 h=46 fgcolor=#333333 bgcolor=#000000 border=1 />
+		<img       x=0        y=0                   src="seek_left.png" />
+		<img       x=26       y=0                   src="seek_right.png" />
+		<!--<box       x=100%-130 y=15   w=50      h=16 fgcolor="#00FF00" id="player_remaining_time">-->
+		<scrollbar x=16       y=1    w=100%-84      src="seek_scroll.png" target="seek" hideifunused=1 />
+		<!--<box       x=5        y=15   w=50      h=16 fgcolor="#00FF00" id="player_played_time">-->
+		<!--<box       x=100%-40  y=16   w=50      h=16 fgcolor="#00FF00" id="player_total_time">-->
+		<if cond="!unqueue">
+			<img       x=100%-80  y=0                   src="seek_bar_right.png"/>
+		</if>
+		<if cond="unqueue">
+			<button    x=100%-90  y=0                   src="next.png" target="next" />
+		</if>
+    </if>
+	<if cond="!editqueue">
+		<!--<box       x=50%-150  y=15   w=50      h=16 fgcolor="#00FF00" bgcolor=#00ff00 id="player_played_time">-->
+		<!--<box       x=next     y=same w=50      h=16 fgcolor="#00FF00" id="player_time_separator_1">-->
+		<!--<box       x=next     y=same w=50      h=16 fgcolor="#00FF00" id="player_remaining_time">-->
+		<!--<box       x=next     y=same w=50      h=16 fgcolor="#00FF00" id="player_time_separator_2">-->
+		<!--<box       x=next     y=same w=50      h=16 fgcolor="#00FF00" id="player_total_time">-->
+		<if cond="unqueue">
+			<button    x=16  y=0                   src="next.png" target="next" />
+		</if>
+	</if>
+</div>
+
+

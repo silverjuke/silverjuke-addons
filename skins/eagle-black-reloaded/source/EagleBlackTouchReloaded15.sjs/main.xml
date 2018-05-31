@@ -1,0 +1,304 @@
+<!-- ***************** EagleTouch single click kiosk skin ************************* -->
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<script src="eagletools.sj" />
+<script src="eagletools_keyboard.sj" />
+<script src="eagletools_musicsearch.sj" />
+<script src="eagletools_coverart.sj" />
+<script src="eagletools_hilite.sj" />
+<script src="main.sj" />
+<script src="covers.sj" />
+<script src="tracks.sj" />
+<script src="message.sj" />
+<script src="confirm.sj" />
+<script src="search.sj" />
+<script src="cacheload.sj" />
+<script src="translate.sj" />
+<script src="radio.sj" />
+<script src="queue.sj" />
+
+<skin debugoutline=0 debuginfo=0 name="Eagle Black Touch Reloaded" about="A touch-optimized scalable Skin by SilverEagle, heavily modified by Joachim">
+
+    <layout name="etv3_covers" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="covers_base_1.xml" />
+		<include src="covers_base_2.xml" />
+		<include src="covers_elements.xml" />
+		<include src="covers_update.xml" />
+		<include src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_covers_radio" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="covers_base_1.xml" />
+		<img x=100%-92 y=100%-564 src="mediumbutton_frame_grey.png" />
+		<include src="covers_base_2.xml" />
+		<include src="covers_elements.xml" />
+		<include src="covers_update.xml" />
+		<include src="overlay.xml" />
+		<button x=100%-89 y=100%-561 src="mediumbutton.png" srcindex=1 onclick="RadioMode();" />
+        <img x=same+10 y=same+12 src="icon_radio.png" />
+    </layout>
+
+    <layout name="etv3_covers_karaoke_on" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="covers_base_1.xml" />
+		<img x=100%-92 y=100%-483 src="mediumbutton_frame_grey.png" />
+		<include src="covers_base_2.xml" />
+		<include src="covers_elements.xml" />
+		<include src="covers_update.xml" />
+		<include src="overlay.xml" />
+        <button x=100%-89 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="LimitKaraoke(false);" />
+        <img x=same+10 y=same+12 src="icon_karaoke.png" />
+        <img x=same+3 y=same+3 src="icon_cross.png" />
+    </layout>
+	
+	<layout name="etv3_covers_karaoke_on_radio" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="covers_base_1.xml" />
+		<img x=100%-92 y=100%-483 src="mediumbutton_frame_grey.png" />
+		<img x=100%-92 y=100%-564 src="mediumbutton_frame_grey.png" />
+		<include src="covers_base_2.xml" />
+		<include src="covers_elements.xml" />
+		<include src="covers_update.xml" />
+		<include src="overlay.xml" />
+        <button x=100%-89 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="LimitKaraoke(false);" />
+        <img x=same+10 y=same+12 src="icon_karaoke.png" />
+        <img x=same+3 y=same+3 src="icon_cross.png" />
+		<button x=100%-89 y=100%-561 src="mediumbutton.png" srcindex=1 onclick="RadioMode();" />
+        <img x=same+10 y=same+12 src="icon_radio.png" />
+    </layout>
+
+    <layout name="etv3_covers_karaoke_off" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="covers_base_1.xml" />
+		<img x=100%-92 y=100%-483 src="mediumbutton_frame_grey.png" />
+		<include src="covers_base_2.xml" />
+		<include src="covers_elements.xml" />
+		<include src="covers_update.xml" />
+		<include src="overlay.xml" />
+        <button x=100%-89 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="LimitKaraoke(true);" />
+        <img x=same+10 y=same+12 src="icon_karaoke.png" />
+    </layout>
+	
+	<layout name="etv3_covers_karaoke_off_radio" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="covers_base_1.xml" />
+		<img x=100%-92 y=100%-483 src="mediumbutton_frame_grey.png" />
+		<img x=100%-92 y=100%-564 src="mediumbutton_frame_grey.png" />
+		<include src="covers_base_2.xml" />
+		<include src="covers_elements.xml" />
+		<include src="covers_update.xml" />
+		<include src="overlay.xml" />
+        <button x=100%-89 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="LimitKaraoke(true);" />
+        <img x=same+10 y=same+12 src="icon_karaoke.png" />
+		<button x=100%-89 y=100%-561 src="mediumbutton.png" srcindex=1 onclick="RadioMode();" />
+        <img x=same+10 y=same+12 src="icon_radio.png" />
+    </layout>
+
+    <layout name="etv3_tracks" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="tracks_exit1.xml" />
+		<include src="tracks_base.xml" />
+		<include src="tracks_exit2.xml" />
+		<include src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_tracks_updown" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="tracks_exit1.xml" />
+		<include src="tracks_updown1.xml" />
+		<include src="tracks_base.xml" />
+		<include src="tracks_exit2.xml" />
+		<include src="tracks_updown2.xml" />
+		<include src="overlay.xml" />
+    </layout>
+
+    <layout name="etv3_confirm" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<include src="confirm_base.xml" />
+		<include src="confirm_elements.xml" />
+		<include src="overlay.xml" />
+    </layout>
+
+    <layout name="etv3_message" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+        <include src="message.xml" />
+    </layout>
+
+    <layout name="etv3_search_all" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+        <include src="search.xml" />
+
+        <button x=100%-90 y=100%-620 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(1);" />
+        <img x=same+10 y=same+12 src="icon_artist.png" />
+
+        <button x=100%-90 y=100%-550 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(2);" />
+        <img x=same+10 y=same+12 src="icon_album.png" />
+
+        <button x=100%-90 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(3);" />
+        <img x=same+10 y=same+12 src="icon_track.png" />
+    </layout>
+
+    <layout name="etv3_search_artist" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+        <include src="search.xml" />
+
+        <button x=100%-90 y=100%-620 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(0);" />
+        <img x=same+10 y=same+12 src="icon_all.png" />
+
+        <button x=100%-90 y=100%-550 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(2);" />
+        <img x=same+10 y=same+12 src="icon_album.png" />
+
+        <button x=100%-90 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(3);" />
+        <img x=same+10 y=same+12 src="icon_track.png" />
+    </layout>
+
+    <layout name="etv3_search_album" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+        <include src="search.xml" />
+
+        <button x=100%-90 y=100%-620 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(0);" />
+        <img x=same+10 y=same+12 src="icon_all.png" />
+
+        <button x=100%-90 y=100%-550 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(1);" />
+        <img x=same+10 y=same+12 src="icon_artist.png" />
+
+        <button x=100%-90 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(3);" />
+        <img x=same+10 y=same+12 src="icon_track.png" />
+    </layout>
+
+    <layout name="etv3_search_track" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+        <include src="search.xml" />
+
+        <button x=100%-90 y=100%-620 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(0);" />
+        <img x=same+10 y=same+12 src="icon_all.png" />
+
+        <button x=100%-90 y=100%-550 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(1);" />
+        <img x=same+10 y=same+12 src="icon_artist.png" />
+
+        <button x=100%-90 y=100%-480 src="mediumbutton.png" srcindex=1 onclick="SearchWhere(2);" />
+        <img x=same+10 y=same+12 src="icon_album.png" />
+    </layout>
+
+    <layout name="etv3_cacheload" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+        <include src="cacheload.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_0" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4       y=100%-402 src="bigbutton_frame_grey.png" />
+		<include                      src="radio_base1.xml" />
+		<include                      src="radio_base2.xml" />
+		<button  x=8       y=100%-398 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same    y=same     src="icon_exit.png" />
+		<include                      src="radio_elements.xml" />
+		<include                      src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_1" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4       y=100%-402 src="bigbutton_frame_grey.png" />
+		<include                      src="radio_base1.xml" />
+		<include                      src="radio_base2.xml" />
+		<button  x=8       y=100%-398 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same    y=same     src="icon_exit.png" />
+		<include                      src="radio_elements.xml" />
+		<img     x=100%-78 y=100%-524 src="icon_cross.png" />
+		<include                      src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_2" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4       y=100%-402 src="bigbutton_frame_grey.png" />
+		<include                      src="radio_base1.xml" />
+		<include                      src="radio_base2.xml" />
+		<button  x=8       y=100%-398 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same    y=same     src="icon_exit.png" />
+		<include                      src="radio_elements.xml" />
+		<img     x=100%-78 y=100%-574 src="icon_cross.png" />
+		<include                      src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_3" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4       y=100%-402 src="bigbutton_frame_grey.png" />
+		<include                      src="radio_base1.xml" />
+		<include                      src="radio_base2.xml" />
+		<button  x=8       y=100%-398 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same    y=same     src="icon_exit.png" />
+		<include                      src="radio_elements.xml" />
+		<img     x=100%-78 y=100%-624 src="icon_cross.png" />
+		<include                      src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_updown_0" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4        y=100%-154 src="bigbutton_frame.png" />
+		<include                       src="radio_base1.xml" />
+		<img     x=4 y=100%-402        src="bigbutton_frame_grey.png" />
+		<img     x=100%-112 y=same     src="bigbutton_frame_grey.png" />
+		<include                       src="radio_base2.xml" />
+		<button  x=8        y=100%-150 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same     y=same     src="icon_exit.png"                                   />
+		<button  x=8        y=100%-398 src="bigbutton.png"  onclick="RadioPrev();" />
+		<img     x=same-4   y=same     src="icon_left.png" />
+		<button  x=100%-108 y=same     src="bigbutton.png" onclick="RadioNext();" />
+		<img     x=same+4   y=same     src="icon_right.png" />
+		<include                       src="radio_elements.xml" />
+		<include                       src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_updown_1" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4        y=100%-154 src="bigbutton_frame.png" />
+		<include                       src="radio_base1.xml" />
+		<img     x=4 y=100%-402        src="bigbutton_frame_grey.png" />
+		<img     x=100%-112 y=same     src="bigbutton_frame_grey.png" />
+		<include                       src="radio_base2.xml" />
+		<button  x=8        y=100%-150 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same     y=same     src="icon_exit.png"                                   />
+		<button  x=8        y=100%-398 src="bigbutton.png"  onclick="RadioPrev();" />
+		<img     x=same-4   y=same     src="icon_left.png" />
+		<button  x=100%-108 y=same     src="bigbutton.png" onclick="RadioNext();" />
+		<img     x=same+4   y=same     src="icon_right.png" />
+		<include                       src="radio_elements.xml" />
+		<img     x=100%-78 y=100%-524 src="icon_cross.png" />
+		<include                       src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_updown_2" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4        y=100%-154 src="bigbutton_frame.png" />
+		<include                       src="radio_base1.xml" />
+		<img     x=4 y=100%-402        src="bigbutton_frame_grey.png" />
+		<img     x=100%-112 y=same     src="bigbutton_frame_grey.png" />
+		<include                       src="radio_base2.xml" />
+		<button  x=8        y=100%-150 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same     y=same     src="icon_exit.png"                                   />
+		<button  x=8        y=100%-398 src="bigbutton.png"  onclick="RadioPrev();" />
+		<img     x=same-4   y=same     src="icon_left.png" />
+		<button  x=100%-108 y=same     src="bigbutton.png" onclick="RadioNext();" />
+		<img     x=same+4   y=same     src="icon_right.png" />
+		<include                       src="radio_elements.xml" />
+		<img     x=100%-78 y=100%-574 src="icon_cross.png" />
+		<include                       src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_radio_updown_3" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img     x=4        y=100%-154 src="bigbutton_frame.png" />
+		<include                       src="radio_base1.xml" />
+		<img     x=4 y=100%-402        src="bigbutton_frame_grey.png" />
+		<img     x=100%-112 y=same     src="bigbutton_frame_grey.png" />
+		<include                       src="radio_base2.xml" />
+		<button  x=8        y=100%-150 src="bigbutton_back.png"       onclick="RadioExit();" />
+		<img     x=same     y=same     src="icon_exit.png"                                   />
+		<button  x=8        y=100%-398 src="bigbutton.png"  onclick="RadioPrev();" />
+		<img     x=same-4   y=same     src="icon_left.png" />
+		<button  x=100%-108 y=same     src="bigbutton.png" onclick="RadioNext();" />
+		<img     x=same+4   y=same     src="icon_right.png" />
+		<include                       src="radio_elements.xml" />
+		<img     x=100%-78 y=100%-624 src="icon_cross.png" />
+		<include                       src="overlay.xml" />
+    </layout>
+	
+	<layout name="etv3_queue" defw=1024 defh=768 minw=1024 minh=768 usepos="globalpos" usew="globalw" useh="globalh">
+		<img x=4 y=100%-324 src="bigbutton_frame_grey.png" />
+		<div x=56 y=20 w=100%-78 h=100%-74>
+			<include src="rect_grey.xml" />
+		</div>
+
+		<div x=same+2 y=same+2 w=same-4 h=same-4>
+			<include src="rect_light.xml" />
+		</div>
+		<button x=8 y=100%-320 src="bigbutton_back.png"       onclick="QueueExit();" />
+		<img    x=same    y=same     src="icon_exit.png"                               />
+		<include src="covers_update.xml" />
+		<include src="overlay.xml" />
+    </layout>
+
+</skin>
+
+<!-- ***************************************************************** -->
+

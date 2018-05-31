@@ -1,0 +1,20 @@
+
+<div x=50%-448 y=50%-312 w=900 h=620>
+    <include src="rect_white.xml" />
+    <div x=32 y=32 w=100%-64 h=100%-64>
+        <include src="rect_light.xml" />
+    </div>
+</div>
+
+<img x=50%-492 y=50% src="bigbutton_frame.png" />
+
+<div x=50%-444 y=50%-308 w=892 h=612>
+    <include src="rect_dark.xml" />
+</div>
+
+
+<button x=50%-488 y=50%+4 src="bigbutton_back.png" onclick="MessageExit();" />
+<img x=same y=same src="icon_exit.png" />
+
+
+<include src="overlay.xml" />

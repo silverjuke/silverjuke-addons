@@ -1,0 +1,8 @@
+		
+		<div x=56 y=20 w=100%-116 h=100%-240>
+			<include src="rect_grey.xml" />
+		</div>
+		
+		<if cond="shaped">
+			<img x=100%-92 y=100%-474 src="mediumbutton_frame_grey.png" />
+		</if>

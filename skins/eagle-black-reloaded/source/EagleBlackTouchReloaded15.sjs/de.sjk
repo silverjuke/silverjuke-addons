@@ -1,0 +1,67 @@
+
+layout=German;
+
+key=1;          shift=!;
+key=2;          shift=";
+key=3;          shift=§;
+key=4;          shift=$;
+key=5;          shift=%;
+key=6;          shift=&;
+key=7;          shift=/;
+key=8;          shift=(;
+key=9;          shift=);
+key=0;          shift==;
+key=ß;          shift=?;
+key=²;   shift=³;
+key=backsp;     shift=clearall;width=1.8;
+nextline;
+
+spacer;         width=0.5;
+key=q "Q";          shift=@;
+key=w "W";          shift="^";
+key=e "E";          shift=É;
+key=r "R";          shift=Ê;
+key=t "T";          shift=È;
+key=z "Z";          shift=Ù;
+key=u "U";          shift=Ú;
+key=i "I";          shift=Í;
+key=o "O";          shift=Ó;
+key=p "P";          shift=°;
+key=ü "Ü";          shift=\;
+key=+;          shift=*;
+key=enter;      alt1=enter;alt2=enter;alt3=enter;alt4=enter;width=1.3;
+nextline;
+
+spacer;         width=0.8;
+key=a "A";          shift=Á;
+key=s "S";          shift=Â;
+key=d "D";          shift=À;
+key=f "F";          shift=ç;
+key=g "G";          shift=Ý;
+key=h "H";          shift=Û;
+key=j "J";          shift=Î;
+key=k "K";          shift=Ô;
+key=l "L";          shift=~;
+key=ö "Ö";          shift=0xd8;
+key=ä "Ä";          shift=0xc6;
+key=#;          shift=';
+key=entercont;
+nextline;
+
+key=shift "É!*%";      width=1.4;
+key=y "Y";          shift=<;
+key=x "X";          shift=>;
+key=c "C";          shift=|;
+key=v "V";          shift={;
+key=b "B";          shift=};
+key=n "N";          shift=Ì;
+key=m "M";          shift=Ò;
+key=,;          shift=0x3b;
+key=.;          shift=:;
+key=-;          shift=_;
+key=shift "É!*%";      width=2.4;
+nextline;
+
+spacer;         width=1.0;
+key=0x20;       width=11;
+

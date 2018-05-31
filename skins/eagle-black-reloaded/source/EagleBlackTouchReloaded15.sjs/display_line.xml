@@ -1,0 +1,26 @@
+<box x="124" y="100% - 196" w="50%-124" h="146" fgcolor="#666666" bgcolor="#FF0000" target="line00" >
+</box>
+<box x="50%" y="100% - 196" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line01" >
+</box>
+<box x="50%" y="100% - 172" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line02" >
+</box>
+<box x="50%" y="100% - 148" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line03" >
+</box>
+<box x="50%" y="100% - 124" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line04" >
+</box>
+<box x="50%" y="100% - 100" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line05" >
+</box>
+<box x="50%" y="100% - 76" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line06" >
+</box>
+<box x="75%-62" y="100% - 196" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line07" >
+</box>
+<box x="75%-62" y="100% - 172" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line08" >
+</box>
+<box x="75%-62" y="100% - 148" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line09" >
+</box>
+<box x="75%-62" y="100% - 124" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line10" >
+</box>
+<box x="75%-62" y="100% - 100" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line11" >
+</box>
+<box x="75%-62" y="100% - 76" w="25% - 62" h="24" fgcolor="#666666" bgcolor="#000000" target="line12" >
+</box>

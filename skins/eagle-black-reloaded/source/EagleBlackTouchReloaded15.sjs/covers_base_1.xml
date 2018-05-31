@@ -1,0 +1,19 @@
+
+<div w=100% h=100% target=visrect />
+
+<div x=56 y=20 w=100%-116 h=100%-240>
+    <include src="rect_grey.xml" />
+</div>
+
+
+
+<img x=4 y=100%-402 src="bigbutton_frame_grey.png" />
+<img x=100%-112 y=same src="bigbutton_frame_grey.png" />
+
+<if cond="startvis">
+    <img x=8 y=100%-151 src="mediumbutton_frame.png" />
+</if>
+
+<if cond="search">
+	<img x=100%-72 y=100%-151 src="mediumbutton_frame.png" />
+</if>

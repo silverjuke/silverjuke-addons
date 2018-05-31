@@ -1,0 +1,10 @@
+		<img x=100%-84 y=100%-530    src="jumpbutton_frame.png" />
+		<img x=100%-84 y=100%-580    src="jumpbutton_frame.png" />
+		<img x=100%-84 y=100%-630    src="jumpbutton_frame.png" />
+		<img x=100%-80 y=100%-526    src="jumpbutton_base.png" />
+		<img x=100%-80 y=100%-576    src="jumpbutton_base.png" />
+		<img x=100%-80 y=100%-626    src="jumpbutton_base.png" />
+
+		<div x=58 y=22 w=100%-120 h=100%-244>
+			<include src="rect_light.xml" />
+		</div> 

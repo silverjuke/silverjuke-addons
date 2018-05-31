@@ -1,0 +1,14 @@
+<img x=50%-502 y=50%+40 src="bigbutton_frame_grey.png" />
+<img x=50%+398 y=same src="bigbutton_frame_grey.png" />
+
+<div x=50%-448 y=50%-212 w=900 h=420>
+    <include src="rect_grey.xml" />
+    <div x=2 y=2 w=100%-4 h=100%-4>
+        <include src="rect_light.xml" />
+    </div>
+</div>
+
+
+
+
+

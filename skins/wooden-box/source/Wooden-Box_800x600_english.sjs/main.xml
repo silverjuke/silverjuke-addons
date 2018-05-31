@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<skin debugoutline="0" name="Werners Wooden-Box 800x600 English V2" about="min. 800x600 Pixel">
+
+	<tooltips bgcolor="#797979" fgcolor="#FFFFFF" bordercolor="#000000" />
+
+	<layout name="default" maxw="800" maxh="600">
+        <img src="left1.png" w="800" h="600">
+	
+
+
+
+
+
+
+
+
+	<--layout name="default" x="0" y="0 minw="1024" minh="768">
+		
+	
+		
+
+			<include file="all.xml" />
+		
+		
+		<--resizer x="100%-40" y="100%-40" w="40" h="40" />
+		
+		
+
+	</layout>
+
+	<!-- kiosk layout -->
+	<layout name="kiosk" minw="800" minh="600">
+		
+		<div x="0" y="0" w="100%" h="100%">
+			<include file="all.xml" />
+		</div>
+		
+	</layout>
+
+	
+</skin>

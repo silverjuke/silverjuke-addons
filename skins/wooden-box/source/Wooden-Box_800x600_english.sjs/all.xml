@@ -1,0 +1,1119 @@
+
+<!-- decorations -->
+
+<box x="next" y="same" w="100%-725" h="140" bgcolor="#000000" /> <!-- this box was missing in v1.00 and leads to trash under Windows 98 where the video memory is not initialized to null -->
+
+
+
+<img src="left1.png" />
+<img src="unten.png" x="same" y="100%-130" />
+
+
+<!-- controls in the lamps top-left and top-right -->
+<if cond="!kiosk">
+	<button src="titlebar.png" x="100%-124" y="2" cmw="15" target="mainmenu" />
+	
+	<button src="titlebar.png" srcindex="1" x="next+20" y="2"  target="minimize" />
+	<button src="titlebar.png" srcindex="2" x="next+10" y="2"  target="maximize" />
+	<button src="titlebar.png" srcindex="3" x="next+10" y="2" target="quit" />
+</if>
+
+<!-- controls atop above the a-z bar-->
+
+
+
+
+<box x="114" y="140" w="70" h="70" target="displaycover" />
+
+<box x="188" y="100" w="418" h="18" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line00" centeroffset="-20">
+	<color fgcolor="#FFFF00" bgcolor="#9fC060" hicolor="#CCCC00" target="selection" />
+	
+</box>
+<box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line01" centeroffset="-20">
+  <color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+</box>
+<box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line02" centeroffset="-20">
+  <color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+</box>
+
+<box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line03" centeroffset="-20">
+  <color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+</box>
+<box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line04" centeroffset="-20">
+  <color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+</box>
+
+<box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line05" centeroffset="-20">
+  <color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+</box>
+
+<--box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line06" centeroffset="-20">
+  <--color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+<--/box>
+<--box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line07" centeroffset="-20">
+  <--color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+<--/box>
+<--box x="same" y="next" w="same" h="same" fgcolor="#FFFFFF" hicolor="#CCCCCC" target="line08" centeroffset="-20">
+  <--color target="selection" fgcolor="#FFFF00" hicolor="#CCCC00" />
+<--/box>
+
+
+
+
+<--box x="180" y="50" w="120" h="80" fgcolor="#00F200" hicolor="#00F200" target="CurrTime"
+<--/box>
+
+<--box x="32" y="131" w="287" h="30" fgcolor="#00F200" hicolor="#00F200" target="CurrTrack"
+<--/box>
+
+
+
+
+<scrollbar src="z_scroll_h3.png" x="210" y="70" w="378" target="seek"  hideifunused="1" />
+
+
+
+
+<button x="625" y="97" src="playlist_updown.png" srcindex="0" target="displayUp" />
+<scrollbar x="same" y="next" h="85" src="playlist_scroll.png" target="displayVScroll" />
+<button x="same" y="next" src="playlist_updown.png" srcindex="1" target="displayDown" />
+
+
+
+<button src="playlist_hideunused.png" x="100%-158" y="61" inactive="1" target="unqueueall" />
+
+<!-- controls in the a-z bar -->
+
+
+<if cond="playpause">
+	<button x="108" y="100%-47" src="Play_Buttons.png" srcindex="0" target="play" />
+</if>
+<if cond="editqueue">
+        <button x="next" y="100%-47" src="Play_Buttons.png" srcindex="2" target="next" />
+	<button x="next" y="100%-47" src="Play_Buttons.png" srcindex="1" target="prev" />
+	<--button x="next" y="100%-47" src="Play_Buttons.png" srcindex="1" target="play" />
+
+</if>
+<--if cond="playpause,editqueue">
+	<--div x="next" y="same" w="6" h="8"></div>
+	
+</if>
+
+<--if cond="!kiosk">
+	<button x="next" y="100%-47" src="Play_Buttons.png" srcindex="3" target="EnqueueNow" />
+	<button x="next" y="same" src="Play_Buttons.png" srcindex="4" target="EnqueueNext" />
+
+	<if cond="!startvis">
+		<div x="next" y="same" w="6" h="8"></div>
+		<img x="next" y="same" src="ctrl_line.png" />
+	</if>
+</if>
+<if cond="startvis">
+	<button x="next" y="same" src="Play_Buttons.png" srcindex="5" target="EnqueueLast" />
+	<--div x="next" y="same" w="6" h="8"></div>
+
+
+<!-- Button 1 links-oben -->
+<button x="166" y="239" src="Buttons.png" srcindex="5" onclick="MS_01();"/--> 01
+
+
+<!-- Button 2 links-mitte -->
+<button x="same" y="268" src="Buttons.png" srcindex="1" onclick="MS_02();"/--> 02
+
+<!-- Button 3 links-unten -->
+<button x="same" y="296" src="Buttons.png" srcindex="6" onclick="MS_03();"/--> 03
+
+<!-- Button 4 mitte-oben -->
+<button x="341" y="239" src="Buttons.png" srcindex="4" onclick="MS_04();"/--> 04
+
+<!-- Button 5 mitte-mitte -->
+<button x="same" y="268" src="Buttons.png" srcindex="2" onclick="MS_05();"/--> 05
+
+<!-- Button 6 mitte-unten -->
+<button x="same" y="296" src="Buttons.png" srcindex="7" onclick="MS_06();"/--> 06
+
+<!-- Button 7 rechts-oben -->
+<button x="511" y="239" src="Buttons.png" srcindex="8" target="gotoCurr" />
+
+<!-- Button 8 rechts-unten -->
+<button x="same" y="268" src="Buttons.png" srcindex="3" onclick="MS_06();"/--> 07
+
+
+
+<--button x="next+7" y="same" src="Buttons_2.png" srcindex="4" target="EnqueueLast" />
+<--button x="next+7" y="same" src="Buttons_2.png" srcindex="5" target="saveplaylist" />
+<--button x="next+7" y="same" src="Buttons_2.png" srcindex="6" target="UnqueueAll" />
+<--button x="next+21" y="same" src="Buttons_2.png" srcindex="7" target="AlbumView" />
+<--button x="next+6" y="same" src="Buttons_2.png" srcindex="8" target="CoverView" />
+<--button x="next+6" y="same" src="Buttons_2.png" srcindex="9" target="ListView" />
+<--button x="next+23" y="same" src="Buttons_2.png" srcindex="10" target="zoomin" />
+<--button x="next+7" y="same" src="Buttons_2.png" srcindex="11" target="zoomout" />
+
+
+</if>
+
+<button x="200" y="44" src="ctrl_az.png" srcindex="0" target="gotoA" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="1" target="gotoB" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="2" target="gotoC" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="3" target="gotoD" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="4" target="gotoE" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="5" target="gotoF" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="6" target="gotoG" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="7" target="gotoH" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="8" target="gotoI" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="9" target="gotoJ" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="10" target="gotoK" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="11" target="gotoL" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="12" target="gotoM" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="13" target="gotoN" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="14" target="gotoO" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="15" target="gotoP" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="16" target="gotoQ" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="17" target="gotoR" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="18" target="gotoS" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="19" target="gotoT" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="20" target="gotoU" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="21" target="gotoV" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="22" target="gotoW" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="23" target="gotoX" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="24" target="gotoY" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="25" target="gotoZ" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="26" target="goto0" />
+<button x="next" y="same" src="ctrl_az.png" srcindex="27" target="gotoCurr" />
+
+
+
+
+
+<if cond="search">
+	<div x="514" y="296" w="127" h="23">
+		<--img src="search_arrow.png" x="+130" y="-2" />
+		<--img src="search_bg.png" w="100%-25"/>
+		<input x="3" y="same+1" w="100%-28" h="16">
+		<color fgcolor="#000000" bgcolor="#D6D6D6" target="normal" /> 
+<--color fgcolor="#000000" bgcolor="#FF434B" target="normal" /> 
+
+		</input>
+		<button x="100%-25" src="search_button.png" target="searchbutton" />
+		<if cond="!kiosk">
+			<--button x="next" src="search_button.png" srcindex="1" cmw="8" target="searchbutton" />
+		</if>
+		<box x="500" y="100%+11" w="168" h="14" target="searchinfo" inactive="1">
+			<color target="normal" fgcolor="#D6D6D6" />
+		</box>
+
+
+
+
+
+
+
+
+
+
+
+
+<--if cond="search">
+	<--div x="14" y="325" w="273" h="60">
+		
+		<--input x="3" y="3" w="100%-28" h="37">
+			<--color fgcolor="#000000" bgcolor="#D0C288" target="normal" /> 
+		<--/input>
+		<--button x="next" src="search_button.png" target="searchbutton" />
+
+
+<if cond="!kiosk">
+			<--button x="next" y="-2" src="Button_Musikauswahl.png" cmw="8" target="searchbutton" />
+		</if>
+		<--box x="-10" y="-32" w="330" h="30" target="searchinfo" inactive="1">
+			<--color target="normal" fgcolor="#8E763E" />
+		<--/box>
+
+
+
+		<--if cond="!kiosk">
+			<--button x="next" src="search_button.png" srcindex="1" cmw="8" target="searchbutton" />
+		
+	</div>
+</if>
+
+<!-- the workspace -->
+<workspace x="82" y="348" w="636" h="100%-395">
+	<color fgcolor="#232323" bgcolor="#E0D8C3" hicolor="#F00000" target="normal" /> 
+	<color fgcolor="#232323" bgcolor="#D3C8A9" hicolor="#F00000" target="normalodd" /> 
+	<color fgcolor="#F9F9F9" bgcolor="#771111" hicolor="#FFFF00" target="selection" /> 
+	<color fgcolor="#F9F9F9" bgcolor="#771111" hicolor="#FFFF00" target="selectionodd" /> 
+	<color fgcolor="#602828" bgcolor="#FFFFFF" hicolor="#F00000" target="title1" /> 
+	<color fgcolor="#434343" bgcolor="#FFFFFF" hicolor="#F00000" target="title2" />
+	<color fgcolor="#434343" bgcolor="#FFFFFF" hicolor="#F00000" target="title3" />
+	<color fgcolor="#434343" target="verttext" /> 
+	<color fgcolor="#80221A" target="stubtext" /> 
+</workspace>
+
+
+
+
+
+
+
+        <if cond="volume">
+	<scrollbar x="58" y="339" src="vol_slider.png" h="100%-455" target="volSlider" />
+        </if>
+
+
+
+
+<--button x="983" y="415" src="z_scroll_v_buttons.png" srcindex="0" target="workspaceUp" />
+<scrollbar x="100%-80" y="340" h="100%-413" src="z_scroll_v4.png" target="workspaceVScroll" />
+<--button x="same-1" y="next" src="z_scroll_v_buttons.png" srcindex="1" target="workspaceDown" />
+
+
+	<--button x="21" y="100%-29" src="z_scroll_h_buttons.png" srcindex="0" target="workspacePageLeft" />
+        <scrollbar x="82" y="339" w="636" src="z_scroll_h4.png" target="workspaceHScroll" />
+	<--button x="next" y="same-5" src="z_scroll_h_buttons.png" srcindex="1" target="workspacePageRight" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+function Schlafmodus() 
+{ 
+
+bestaetigen=confirm("Schlafmodus Aktivieren?"); 
+
+if (bestaetigen==true) 
+{ 
+program.sleepMode = true; 
+program.sleepMinutes = 90; 
+} 
+else 
+{ 
+alert("Sie haben auf ABBRECHEN geklickt"); 
+} 
+} 
+
+
+
+
+
+
+
+function MS_01() 
+   { 
+         program.musicSel = "A01";  
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_02() 
+   { 
+         program.musicSel = "A02"; 
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_03() 
+   { 
+         program.musicSel = "A03"; 
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_04() 
+   { 
+         program.musicSel = "A04"; 
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_05() 
+   { 
+         program.musicSel = "A05"; 
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_06() 
+   { 
+         program.musicSel = "A06"; 
+         program.setDisplayMsg('Music etc selected', 1000); 
+   }
+
+
+
+function MS_07() 
+   { 
+         program.musicSel = "A07"; 
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_08() 
+   { 
+         program.musicSel = "08";  
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_09() 
+   { 
+         program.musicSel = "09";  
+         program.setDisplayMsg('Music selected', 1000); 
+   }
+
+
+
+function MS_10() 
+   { 
+         program.musicSel = "10";  
+         program.setDisplayMsg('Musicals selected', 1000); 
+   }
+
+
+
+function MS_11() 
+   { 
+         program.musicSel = "11";  
+         program.setDisplayMsg('Musicals selected', 1000); 
+   }
+
+
+
+function MS_12() 
+   { 
+         program.musicSel = "12"; 
+                    //Musikauswahl heiﬂt "0 - Musicals" 
+         program.setDisplayMsg('Musicals selected', 1000); 
+   }
+
+
+
+
+
+
+
+
+
+
+
+function Lieblingsmusik_Cult() 
+   { 
+         program.musicSel = "Lieblingsmusik_Cult"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_Cult" 
+         program.setDisplayMsg('Cult selected', 1000); 
+   }
+
+function Lieblingsmusik_DeutschRock() 
+   { 
+         program.musicSel = "Lieblingsmusik_DeutschRock"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_DeutschRock" 
+         program.setDisplayMsg('DeutschRock selected', 1000); 
+   }
+
+function Lieblingsmusik_Easy_Listening() 
+   { 
+         program.musicSel = "Lieblingsmusik_Easy_Listening"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_Easy_Listening" 
+         program.setDisplayMsg('Easy Listening selected', 1000); 
+   }
+
+function Lieblingsmusik_Punkrock() 
+   { 
+         program.musicSel = "Lieblingsmusik_Punkrock"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_Punkrock" 
+         program.setDisplayMsg('Punkrock selected', 1000); 
+   }
+
+function Lieblingsmusik_Gothic() 
+   { 
+         program.musicSel = "Lieblingsmusik_Gothic"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_Gothic" 
+         program.setDisplayMsg('Gothic selected', 1000); 
+   }
+
+function Lieblingsmusik_80er() 
+   { 
+         program.musicSel = "Lieblingsmusik_80er"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_80er" 
+         program.setDisplayMsg('80er selected', 1000); 
+   }
+
+function Lieblingsmusik_Soft() 
+   { 
+         program.musicSel = "Lieblingsmusik_Soft"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_Soft" 
+         program.setDisplayMsg('Lieblingsmusik Soft selected', 1000); 
+   }
+
+function Lieblingsmusik_Stimmung() 
+   { 
+         program.musicSel = "Lieblingsmusik_Stimmung"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_Stimmung" 
+         program.setDisplayMsg('Lieblingsmusik Stimmung selected', 1000); 
+   }
+
+function Lieblingsmusik_Aggressiv() 
+   { 
+         program.musicSel = "Lieblingsmusik_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Lieblingsmusik_Aggressiv" 
+         program.setDisplayMsg('Lieblingsmusik Aggressiv selected', 1000); 
+   }
+
+function Deutsch_Kult() 
+   { 
+         program.musicSel = "Deutsch_Kult"; 
+                    //Musikauswahl heiﬂt "Deutsch_Kult" 
+         program.setDisplayMsg('Deutsch Kult selected', 1000); 
+   }
+
+function Deutsch_Deutsche_Schlager() 
+   { 
+         program.musicSel = "Deutsch_Deutsche_Schlager"; 
+                    //Musikauswahl heiﬂt "Deutsch_Deutsche_Schlager" 
+         program.setDisplayMsg('Deutsche Schlager selected', 1000); 
+   }
+
+function Deutsch_Volksmusik() 
+   { 
+         program.musicSel = "Deutsch_Volksmusik"; 
+                    //Musikauswahl heiﬂt "Deutsch_Volksmusik" 
+         program.setDisplayMsg('Volksmusik selected', 1000); 
+   }
+
+function Deutsch_DeutschRock() 
+   { 
+         program.musicSel = "Deutsch_DeutschRock"; 
+                    //Musikauswahl heiﬂt "Deutsch_DeutschRock" 
+         program.setDisplayMsg('Deutsch Rock selected', 1000); 
+   }
+
+function Deutsch_DeutschPop() 
+   { 
+         program.musicSel = "Deutsch_DeutschPop"; 
+                    //Musikauswahl heiﬂt "Deutsch_DeutschPop" 
+         program.setDisplayMsg('Deutsch Pop selected', 1000); 
+   }
+
+function Deutsch_Ballermann() 
+   { 
+         program.musicSel = "Deutsch_Ballermann"; 
+                    //Musikauswahl heiﬂt "Deutsch_Ballermann" 
+         program.setDisplayMsg('Deutsch Ballermann selected', 1000); 
+   }
+
+function Deutsch_Soft() 
+   { 
+         program.musicSel = "Deutsch_Soft"; 
+                    //Musikauswahl heiﬂt "Deutsch_Soft" 
+         program.setDisplayMsg('Deutsch Soft selected', 1000); 
+   }
+
+function Deutsch_Stimmung() 
+   { 
+         program.musicSel = "Deutsch_Stimmung"; 
+                    //Musikauswahl heiﬂt "Deutsch_Stimmung" 
+         program.setDisplayMsg('Deutsch Stimmung selected', 1000); 
+   }
+
+function Deutsch_Aggressiv() 
+   { 
+         program.musicSel = "Deutsch_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Deutsch_Aggressiv" 
+         program.setDisplayMsg('Deutsch Aggressiv selected', 1000); 
+   }
+
+function Black_Blues() 
+   { 
+         program.musicSel = "Black_Blues"; 
+                    //Musikauswahl heiﬂt "Black_Blues" 
+         program.setDisplayMsg('Blues selected', 1000); 
+   }
+
+function Black_Soul() 
+   { 
+         program.musicSel = "Black_Soul"; 
+                    //Musikauswahl heiﬂt "Black_Soul" 
+         program.setDisplayMsg('Soul selected', 1000); 
+   }
+
+function Black_Rhythm_Blues() 
+   { 
+         program.musicSel = "Black_Rhythm_Blues"; 
+                    //Musikauswahl heiﬂt "Black_Rhythm_Blues" 
+         program.setDisplayMsg('Rhythm and Blues selected', 1000); 
+   }
+
+function Black_Gospel() 
+   { 
+         program.musicSel = "Black_Gospel"; 
+                    //Musikauswahl heiﬂt "Black_Gospel" 
+         program.setDisplayMsg('Gospel selected', 1000); 
+   }
+
+function Black_Reggae() 
+   { 
+         program.musicSel = "Black_Reggae"; 
+                    //Musikauswahl heiﬂt "Black_Reggae" 
+         program.setDisplayMsg('Reggae selected', 1000); 
+   }
+
+function Black_Black() 
+   { 
+         program.musicSel = "Black_Black"; 
+                    //Musikauswahl heiﬂt "Black_Black" 
+         program.setDisplayMsg('Black selected', 1000); 
+   }
+
+function Black_Soft() 
+   { 
+         program.musicSel = "Black_Soft"; 
+                    //Musikauswahl heiﬂt "Black_Soft" 
+         program.setDisplayMsg('Black Soft selected', 1000); 
+   }
+
+function Black_Stimmung() 
+   { 
+         program.musicSel = "Black_Stimmung"; 
+                    //Musikauswahl heiﬂt "Black_Stimmung" 
+         program.setDisplayMsg('Black Stimmung selected', 1000); 
+   }
+
+function Black_Aggressiv() 
+   { 
+         program.musicSel = "Black_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Black_Aggressiv" 
+         program.setDisplayMsg('Black Aggressiv selected', 1000); 
+   }
+
+function Club_Dance() 
+   { 
+         program.musicSel = "Club_Dance"; 
+                    //Musikauswahl heiﬂt "Club_Dance" 
+         program.setDisplayMsg('Club Dance selected', 1000); 
+   }
+
+function Club_Charts() 
+   { 
+         program.musicSel = "Club_Charts"; 
+                    //Musikauswahl heiﬂt "Club_Charts" 
+         program.setDisplayMsg('Club Charts selected', 1000); 
+   }
+
+
+function Club_House() 
+   { 
+         program.musicSel = "Club_House"; 
+                    //Musikauswahl heiﬂt "Club_House" 
+         program.setDisplayMsg('House selected', 1000); 
+   }
+
+
+function Club_HipHop() 
+   { 
+         program.musicSel = "Club_HipHop"; 
+                    //Musikauswahl heiﬂt "Club_HipHop" 
+         program.setDisplayMsg('HipHop selected', 1000); 
+   }
+
+
+function Club_Electronic() 
+   { 
+         program.musicSel = "Club_Electronic"; 
+                    //Musikauswahl heiﬂt "Club_Electronic" 
+         program.setDisplayMsg('Club Electronic selected', 1000); 
+   }
+
+
+function Club_Trance() 
+   { 
+         program.musicSel = "Club_Trance"; 
+                    //Musikauswahl heiﬂt "Club_Trance" 
+         program.setDisplayMsg('Trance selected', 1000); 
+   }
+
+
+function Club_Soft() 
+   { 
+         program.musicSel = "Club_Soft"; 
+                    //Musikauswahl heiﬂt "Club_Soft" 
+         program.setDisplayMsg('Club Soft selected', 1000); 
+   }
+
+function Club_Stimmung() 
+   { 
+         program.musicSel = "Club_Stimmung"; 
+                    //Musikauswahl heiﬂt "Club_Stimmung" 
+         program.setDisplayMsg('Club Stimmung selected', 1000); 
+   }
+
+function Club_Aggressiv() 
+   { 
+         program.musicSel = "Club_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Club_Aggressiv" 
+         program.setDisplayMsg('Club Aggressiv selected', 1000); 
+   }
+
+
+function Oldies_Oldies() 
+   { 
+         program.musicSel = "Oldies_Oldies"; 
+                    //Musikauswahl heiﬂt "Oldies_Oldies" 
+         program.setDisplayMsg('Oldies selected', 1000); 
+   }
+
+
+function Oldies_Rockn_Roll() 
+   { 
+         program.musicSel = "Oldies_Rockn_Roll"; 
+                    //Musikauswahl heiﬂt "Oldies_Rockn_Roll" 
+         program.setDisplayMsg('Rock n Roll selected', 1000); 
+   }
+
+
+function Oldies_Flower_Power() 
+   { 
+         program.musicSel = "Oldies_Flower_Power"; 
+                    //Musikauswahl heiﬂt "Oldies_Flower_Power" 
+         program.setDisplayMsg('Flower Power selected', 1000); 
+   }
+
+
+function Oldies_70er() 
+   { 
+         program.musicSel = "Oldies_70er"; 
+                    //Musikauswahl heiﬂt "Oldies_70er" 
+         program.setDisplayMsg('70er selected', 1000); 
+   }
+
+
+function Oldies_80er() 
+   { 
+         program.musicSel = "Oldies_80er"; 
+                    //Musikauswahl heiﬂt "Oldies_80er" 
+         program.setDisplayMsg('80er selected', 1000); 
+   }
+
+
+function Oldies_90er() 
+   { 
+         program.musicSel = "Oldies_90er"; 
+                    //Musikauswahl heiﬂt "Oldies_90er" 
+         program.setDisplayMsg('90er selected', 1000); 
+   }
+
+function Oldies_Soft() 
+   { 
+         program.musicSel = "Oldies_Soft"; 
+                    //Musikauswahl heiﬂt "Oldies_Soft" 
+         program.setDisplayMsg('Oldies Soft selected', 1000); 
+   }
+
+
+function Oldies_Stimmung() 
+   { 
+         program.musicSel = "Oldies_Stimmung"; 
+                    //Musikauswahl heiﬂt "Oldies_Stimmung" 
+         program.setDisplayMsg('Oldies Stimmung selected', 1000); 
+   }
+
+
+function Oldies_Aggressiv() 
+   { 
+         program.musicSel = "Oldies_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Oldies_Aggressiv" 
+         program.setDisplayMsg('Oldies Aggressiv selected', 1000); 
+   }
+
+
+function Rock_Pop_Charts() 
+   { 
+         program.musicSel = "Rock_Pop_Charts"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Charts" 
+         program.setDisplayMsg('Rock und Pop Charts selected', 1000); 
+   }
+
+
+function Rock_Pop_Disco() 
+   { 
+         program.musicSel = "Rock_Pop_Disco"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Disco" 
+         program.setDisplayMsg('Rock und Pop Disco selected', 1000); 
+   }
+
+
+function Rock_Pop_Pop() 
+   { 
+         program.musicSel = "Rock_Pop_Pop"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Pop" 
+         program.setDisplayMsg('Pop selected', 1000); 
+   }
+
+
+function Rock_Pop_Rock() 
+   { 
+         program.musicSel = "Rock_Pop_Rock"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Rock" 
+         program.setDisplayMsg('Rock selected', 1000); 
+   }
+
+function Rock_Pop_Kuschelrock() 
+   { 
+         program.musicSel = "Rock_Pop_Kuschelrock"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Kuschelrock" 
+         program.setDisplayMsg('Kuschelrock selected', 1000); 
+   }
+
+
+function Rock_Pop_Southern() 
+   { 
+         program.musicSel = "Rock_Pop_Southern"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Southern" 
+         program.setDisplayMsg('Southern selected', 1000); 
+   }
+
+
+function Rock_Pop_Soft() 
+   { 
+         program.musicSel = "Rock_Pop_Soft"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Soft" 
+         program.setDisplayMsg('Rock und Pop Soft selected', 1000); 
+   }
+
+
+function Rock_Pop_Stimmung() 
+   { 
+         program.musicSel = "Rock_Pop_Stimmung"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Stimmung" 
+         program.setDisplayMsg('Rock und Pop Stimmung selected', 1000); 
+   }
+
+
+function Rock_Pop_Aggressiv() 
+   { 
+         program.musicSel = "Rock_Pop_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Rock_Pop_Aggressiv" 
+         program.setDisplayMsg('Rock und Pop Aggressiv selected', 1000); 
+   }
+
+
+function Dark_Metal_Gothic() 
+   { 
+         program.musicSel = "Dark_Metal_Gothic"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_Gothic" 
+         program.setDisplayMsg('Gothic selected', 1000); 
+   }
+
+
+function Dark_Metal_GothicRock() 
+   { 
+         program.musicSel = "Dark_Metal_GothicRock"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_GothicRock" 
+         program.setDisplayMsg('GothicRock selected', 1000); 
+   }
+
+function Dark_Metal_Darkwave() 
+   { 
+         program.musicSel = "Dark_Metal_Darkwave"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_Darkwave" 
+         program.setDisplayMsg('Darkwave selected', 1000); 
+   }
+
+
+function Dark_Metal_HeavyMetal() 
+   { 
+         program.musicSel = "Dark_Metal_HeavyMetal"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_HeavyMetal" 
+         program.setDisplayMsg('Heavy Metal selected', 1000); 
+   }
+
+
+function Dark_Metal_SpeedMetal() 
+   { 
+         program.musicSel = "Dark_Metal_SpeedMetal"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_SpeedMetal" 
+         program.setDisplayMsg('Speed Metal selected', 1000); 
+   }
+
+
+function Dark_Metal_DeathMetal() 
+   { 
+         program.musicSel = "Dark_Metal_DeathMetal"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_DeathMetal" 
+         program.setDisplayMsg('DeathMetal selected', 1000); 
+   }
+
+
+function Dark_Metal_Soft()
+   { 
+         program.musicSel = "Dark_Metal_Soft"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_Soft" 
+         program.setDisplayMsg('Dark und Metal_Soft selected', 1000); 
+   }
+
+
+function Dark_Metal_Stimmung() 
+   { 
+         program.musicSel = "Dark_Metal_Stimmung"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_Stimmung" 
+         program.setDisplayMsg('Dark und Metal Stimmung selected', 1000); 
+   }
+
+
+function Dark_Metal_Aggressiv() 
+   { 
+         program.musicSel = "Dark_Metal_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Dark_Metal_Aggressiv" 
+         program.setDisplayMsg('Dark und Metal Aggressiv selected', 1000); 
+   }
+
+function Punk_Punk() 
+   { 
+         program.musicSel = "Punk_Punk"; 
+                    //Musikauswahl heiﬂt "Punk_Punk" 
+         program.setDisplayMsg('Punk selected', 1000); 
+   }
+
+
+function Punk_Funpunk() 
+   { 
+         program.musicSel = "Punk_Funpunk"; 
+                    //Musikauswahl heiﬂt "Punk_Funpunk" 
+         program.setDisplayMsg('Funpunk selected', 1000); 
+   }
+
+
+function Punk_Punkrock() 
+   { 
+         program.musicSel = "Punk_Punkrock"; 
+                    //Musikauswahl heiﬂt "Punk_Punkrock" 
+         program.setDisplayMsg('Punkrock selected', 1000); 
+   }
+
+
+function Punk_Skate() 
+   { 
+         program.musicSel = "Punk_Skate"; 
+                    //Musikauswahl heiﬂt "Punk_Skate" 
+         program.setDisplayMsg('Skate Punk selected', 1000); 
+   }
+
+
+function Punk_Hardcore() 
+   { 
+         program.musicSel = "Punk_Hardcore"; 
+                    //Musikauswahl heiﬂt "Punk_Hardcore" 
+         program.setDisplayMsg('Hardcore Punk selected', 1000); 
+   }
+
+
+function Punk_Emocore() 
+   { 
+         program.musicSel = "Punk_Emocore"; 
+                    //Musikauswahl heiﬂt "Punk_Emocore" 
+         program.setDisplayMsg('Emocore selected', 1000); 
+   }
+
+
+function Punk_Soft() 
+   { 
+         program.musicSel = "Punk_Soft"; 
+                    //Musikauswahl heiﬂt "Punk_Soft" 
+         program.setDisplayMsg('Punk Soft selected', 1000); 
+   }
+
+function Punk_Stimmung() 
+   { 
+         program.musicSel = "Punk_Stimmung"; 
+                    //Musikauswahl heiﬂt "Punk_Stimmung" 
+         program.setDisplayMsg('Punk Stimmung selected', 1000); 
+   }
+
+
+function Punk_Aggressiv() 
+   { 
+         program.musicSel = "Punk_Aggressiv"; 
+                    //Musikauswahl heiﬂt "Punk_Aggressiv" 
+         program.setDisplayMsg('Punk Aggressiv selected', 1000); 
+   }
+
+
+function Jazz_Folk_Jazz() 
+   { 
+         program.musicSel = "Jazz_Folk_Jazz"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Jazz" 
+         program.setDisplayMsg('Jazz selected', 1000); 
+   }
+
+
+function Jazz_Folk_BigBand() 
+   { 
+         program.musicSel = "Jazz_Folk_BigBand"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_BigBand" 
+         program.setDisplayMsg('Big Bands selected', 1000); 
+   }
+
+
+function Jazz_Folk_Modern() 
+   { 
+         program.musicSel = "Jazz_Folk_Modern"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Modern" 
+         program.setDisplayMsg('Jazz und Folk Modern selected', 1000); 
+   }
+
+
+function Jazz_Folk_Swing() 
+   { 
+         program.musicSel = "Jazz_Folk_Swing"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Swing" 
+         program.setDisplayMsg('Swing selected', 1000); 
+   }
+
+
+function Jazz_Folk_Folk() 
+   { 
+         program.musicSel = "Jazz_Folk_Folk"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Folk" 
+         program.setDisplayMsg('Folk selected', 1000); 
+   }
+
+function Jazz_Folk_Vocal() 
+   { 
+         program.musicSel = "Jazz_Folk_Vocal"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Vocal" 
+         program.setDisplayMsg('Jazz und Folk Vocal selected', 1000); 
+   }
+
+
+function Jazz_Folk_Verspielt() 
+   { 
+         program.musicSel = "Jazz_Folk_Verspielt"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Verspielt" 
+         program.setDisplayMsg('Jazz und Folk Verspielt selected', 1000); 
+   }
+
+
+function Jazz_Folk_Langsam() 
+   { 
+         program.musicSel = "Jazz_Folk_Langsam"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Langsam" 
+         program.setDisplayMsg('Jazz und Folk Langsam selected', 1000); 
+   }
+
+
+function Jazz_Folk_Schnell() 
+   { 
+         program.musicSel = "Jazz_Folk_Schnell"; 
+                    //Musikauswahl heiﬂt "Jazz_Folk_Schnell" 
+         program.setDisplayMsg('Jazz und Folk Schnell selected', 1000); 
+   }
+
+
+function Andere_Musik_Party() 
+   { 
+         program.musicSel = "Andere_Musik_Party"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Party" 
+         program.setDisplayMsg('Party Musik selected', 1000); 
+   }
+
+
+function Andere_Musik_Tanzmusik() 
+   { 
+         program.musicSel = "Andere_Musik_Tanzmusik"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Tanzmusik" 
+         program.setDisplayMsg('Tanzmusik selected', 1000); 
+   }
+
+
+function Andere_Musik_Easy_Listening() 
+   { 
+         program.musicSel = "Andere_Musik_Easy_Listening"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Easy_Listening" 
+         program.setDisplayMsg('Easy Listening selected', 1000); 
+   }
+
+function Andere_Musik_Country() 
+   { 
+         program.musicSel = "Andere_Musik_Country"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Country" 
+         program.setDisplayMsg('Country selected', 1000); 
+   }
+
+
+function Andere_Musik_Klassik_Oper() 
+   { 
+         program.musicSel = "Andere_Musik_Klassik_Oper"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Klassik_Oper" 
+         program.setDisplayMsg('Klassik und Oper selected', 1000); 
+   }
+
+
+function Andere_Musik_Audiophile() 
+   { 
+         program.musicSel = "Andere_Musik_Audiophile"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Audiophile" 
+         program.setDisplayMsg('Audiophile Musik selected', 1000); 
+   }
+
+
+function Andere_Musik_Crossover() 
+   { 
+         program.musicSel = "Andere_Musik_Crossover"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Crossover" 
+         program.setDisplayMsg('Crossover selected', 1000); 
+   }
+
+
+function Andere_Musik_Super_Klang() 
+   { 
+         program.musicSel = "Andere_Musik_Super_Klang"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Super_Klang" 
+         program.setDisplayMsg('Super Klang selected', 1000); 
+   }
+
+
+function Andere_Musik_Entspannend() 
+   { 
+         program.musicSel = "Andere_Musik_Entspannend"; 
+                    //Musikauswahl heiﬂt "Andere_Musik_Entspannend" 
+         program.setDisplayMsg('Entspannende Musik selected', 1000); 
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

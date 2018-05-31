@@ -1,0 +1,12 @@
+ 		<if cond="shaped">
+			<button x=100%-89 y=100%-471 src="mediumbutton.png" onclick="RadioEdit()" />
+			<img    x=same+10 y=same+12 src="icon_add.png" />
+		</if>
+		
+		<img x=100%-76 y=100%-521    src="jumpbutton.png" />
+		<img x=100%-76 y=100%-571    src="jumpbutton.png" />
+		<img x=100%-76 y=100%-621    src="jumpbutton.png" />
+		
+		<button x=100%-72 y=100%-518 src="genre.png"    onclick="RadioSort(1);" />
+		<button x=100%-72 y=100%-568 src="favorite.png" onclick="RadioSort(2);" />
+		<button x=100%-72 y=100%-618 src="globe.png"    onclick="RadioSort(3);" />

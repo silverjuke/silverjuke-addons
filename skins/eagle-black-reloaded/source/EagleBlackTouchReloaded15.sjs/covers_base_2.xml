@@ -1,0 +1,66 @@
+
+<div x=-60 y=100%-250 w=100%+100 h=40>
+    <img x=50%-20  y=0    src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+    <img x=same-3% y=same src="jumpbutton_frame.png" />
+
+    <img x=50%-20  y=0    src="blank.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+    <img x=same+3% y=same src="jumpbutton_frame.png" />
+</div>
+
+<div x=-60 y=100%-250 w=100%+100 h=40>
+    <img x=50%-16  y=4    src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+    <img x=same-3% y=same src="jumpbutton_base.png" />
+
+    <img x=50%-16  y=4    src="blank.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+    <img x=same+3% y=same src="jumpbutton_base.png" />
+</div>
+
+

@@ -1,0 +1,9 @@
+<!-- ***************** cache loading ************************* -->
+
+<box x=0% y=100%-30 h=30 w=100% fgcolor=#FFFFFF id="cacheload_info" />
+
+<button w=100% h=100% src="blank.png"  onclick="CacheLoadAbort()" />
+
+<include src="overlay.xml" />
+
+<!-- ***************************************************************** -->

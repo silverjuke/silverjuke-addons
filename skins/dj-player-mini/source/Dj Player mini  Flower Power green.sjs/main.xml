@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+
+
+<skin debugoutline="0"  name="Dj Player mini Flower Power green" about="Skin created by R.K. (Kayyak).">
+<tooltips bgcolor="#E6E6E6" fgcolor="#232323" bordercolor="#000000" />
+<layout name="a" minw=512 minh=190 maxw="512" maxh="190">
+        <include src="1.xml" />
+       
+       </layout>
+
+
+</skin>
+
+<script>
+
+player.onTrackChange = ScreenUpdate;
+program.onKioskStarted = ScreenUpdate;
+program.onKioskEnded = ScreenUpdate;
+
+function fastbw() { player.time -= 10000; }
+function fastfw() { player.time += 10000; }
+
+
+function Rated() 
+{ 
+program.musicSel = "Rated"; 
+program.setDisplayMsg('Rated selected', 1000); 
+} 
+
+
+function Genre() 
+{ 
+program.musicSel = "Genre"; 
+program.setDisplayMsg('Genre selected', 1000); 
+} 
+
+function ScreenUpdate()
+{	
+if (player.queueLength >0) 
+	{
+	program.setSkinText("artist",player.getArtistAtPos());
+	program.setSkinText("album",player.getAlbumAtPos());
+	program.setSkinText("title",player.getTitleAtPos());
+	url = player.getUrlAtPos();
+	var ratingstring ="";
+	var year = "";
+	var genre = "";
+	var db = new Database();
+	var quoteExpr = new RegExp("'", "g");
+	db.openQuery("select rating,year,genrename from tracks where url ='"+url.replace(quoteExpr,"''")+"';");
+	if( db.nextRecord() )  
+		{
+		rating = parseInt(db.getField(0));
+		year = db.getField(1);
+		if ( year == 0) 
+			{
+			year = "";
+			}
+			program.setSkinText("YearTest", year);
+			genre = db.getField(2);
+		    program.setSkinText("TestGenre",genre);
+			switch (rating) 
+			{
+			case 0:	
+				ratingstring = "";
+				break;
+			case 1:	
+				ratingstring = "*";
+				break;
+			case 2:	
+				ratingstring = "**";
+				break;
+			case 3:	
+				ratingstring = "***";
+				break;
+			case 4:	
+				ratingstring = "****";
+				break;
+			case 5:	
+				ratingstring = "*****";
+				break;
+			}
+		program.setSkinText("rating",ratingstring);
+		}
+	db.closeQuery();
+	}
+}
+
+function setRating0()
+	{
+	url = player.getUrlAtPos();
+	if (url != "") 
+	var db = new Database();
+	var quoteExpr = new RegExp("'", "g");
+	db.openQuery("update tracks set rating=0 where url ='"+url.replace(quoteExpr,"''")+"';");
+	db.closeQuery();
+	program.refreshWindows();
+	program.setDisplayMsg ('Rating set to 0',1000);
+	ScreenUpdate();
+	}
+
+function setRating1()
+	{
+	url = player.getUrlAtPos();
+	var db = new Database();
+	var quoteExpr = new RegExp("'", "g");
+	db.openQuery("update tracks set rating=1 where url ='"+url.replace(quoteExpr,"''")+"';");
+	db.closeQuery();
+	program.refreshWindows();
+	program.setDisplayMsg("Rating set to '*'",1000);
+	ScreenUpdate();
+	}
+
+function setRating2()
+	{
+	url = player.getUrlAtPos();
+	var db = new Database();
+	var quoteExpr = new RegExp("'", "g");
+	db.openQuery("update tracks set rating=2 where url ='"+url.replace(quoteExpr,"''")+"';");
+	db.closeQuery();
+	program.refreshWindows();
+	program.setDisplayMsg("Rating set to '**'",1000);
+	ScreenUpdate();
+	}
+
+function setRating3()
+	{
+	url = player.getUrlAtPos();
+	var db = new Database();
+	var quoteExpr = new RegExp("'", "g");
+	db.openQuery("update tracks set rating=3 where url ='"+url.replace(quoteExpr,"''")+"';");
+	db.closeQuery();
+	program.refreshWindows();
+	program.setDisplayMsg("Rating set to '***'",1000);
+	ScreenUpdate()
+	}
+
+function setRating4()
+	{
+	url = player.getUrlAtPos();
+	var db = new Database();
+	var quoteExpr = new RegExp("'", "g");
+	db.openQuery("update tracks set rating=4 where url ='"+url.replace(quoteExpr,"''")+"';");
+	db.closeQuery();
+	program.refreshWindows();
+	program.setDisplayMsg("Rating set to '****'",1000);
+	ScreenUpdate();
+	}
+
+function setRating5()
+	{
+	url = player.getUrlAtPos();
+	var db = new Database();
+	var quoteExpr = new RegExp("'", "g");
+	db.openQuery("update tracks set rating=5 where url ='"+url.replace(quoteExpr,"''")+"';");
+	db.closeQuery();
+	program.refreshWindows();
+	program.setDisplayMsg("Rating set to '*****'",1000);
+	ScreenUpdate();
+	}
+
+function update()
+{
+ 
+ if (player.queueLength >0)      
+  {      
+  var length = 0     
+  for (i=0; i < player.queueLength; i++) 
+       {
+       length += parseInt(player.getDurationAtPos(i));
+       }
+  obj = new Date(length); 
+  std = "" + obj.getHours()-1;
+  min = "0" + obj.getMinutes();
+  sec = "0" + obj.getSeconds();
+  dauer = "" +std + ":" + min.substr(-2,2) + ":" + sec.substr(-2,2);
+  program.setSkinText("playlistlength",dauer);        
+ 
+  length = parseInt(player.getDurationAtPos()) - parseInt(player.time);   
+  for (i=player.queuePos +1 ; i < player.queueLength; i++) 
+       {
+       length += parseInt(player.getDurationAtPos(i));
+       }
+
+
+  obj = new Date(length);
+  std = "" + obj.getHours()-1;
+  min = "0" + obj.getMinutes();
+  sec = "0" + obj.getSeconds();
+  dauer = "" +std + ":" + min.substr(-2,2) + ":" + sec.substr(-2,2);
+  program.setSkinText("playlistremainlength",dauer);    
+  program.setSkinText("playlisttotalnumber",player.queueLength);
+  program.setSkinText("playlistremainnumber",player.queueLength-player.queuePos);
+  }
+}
+
+program.setTimeout(update,1000,true);
+
+
+</script>
+
+
+
+

@@ -1,0 +1,28 @@
+<!-- Born To Work -->
+
+<!-- main background image -->
+<img x="0" y="0" src="maincover.png" />
+
+<!-- current track box -->
+<box x="1000" y="600" w="804" h="150" fgcolor="#CCCCCC" target="CurrTrack" />
+<color fgcolor=#FFFFFF target="selection" />
+</box>
+
+<!-- tracklist box -->
+<box x="same" y="next+9" w="804" h="50" fgcolor="#CCCCCC" target="line00" centeroffset="-29">
+<color fgcolor=#FFFFFF target="selection" />
+</box>
+<box x="same" y="next" w="same" h="same" fgcolor="#CCCCCC" target="line01" centeroffset="-29">
+<color fgcolor=#FFFFFF target="selection" />
+</box>
+<box x="same" y="next" w="same" h="same" fgcolor="#CCCCCC" target="line02" centeroffset="-29">
+<color fgcolor=#FFFFFF target="selection" />
+</box>
+
+<!-- volume bar -->
+<!--
+<scrollbar x=469 y=13 h=178 src="volumeslider.png" target="volslider" /> -->
+
+<!-- stop and play buttons -->
+<button x="1500" y="150" src="stop.png" srcindex="0" target="stop" />
+<button x="1000" y="150" src="play.png" srcindex="0" target="play" />

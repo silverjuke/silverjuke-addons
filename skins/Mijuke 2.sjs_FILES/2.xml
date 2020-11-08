@@ -1,0 +1,110 @@
+<!-- Mijuke -->
+<img x="0" y="0"  w="100%" h="100%"src="10.png"/>
+<img x="0" y="0"  w="100%" src="14.png" />
+<img x="0" y="next"  w="100%" h="100%-138" src="12.png" />
+<img x="0" y="next"  w="100%" src="13.png" />
+
+
+</if>
+<if cond="shaped">
+    <button x="100%-41" y="8"  src="3.png" srcindex=2 target="quit" />
+    
+    <button x="100%-21" y="8"  src="3.png" srcindex=4 target="config" cmw=13 />
+    <button x="100%-61" y="8"  src="3.png" srcindex=1 target="maximize" />
+    <button x="100%-81" y="8"  src="3.png" srcindex=0 target="minimize" />
+</if>    
+   
+    
+</if>
+<-- resizer -->
+		<if cond="!kiosk">
+			<img src="11.png" x="100%-5" y="100%-5"  w="5"  h="5" />
+                        <resizer x="100%-5" y="100%-5" w="5" h="5" />
+			
+		</if>
+
+
+			
+  
+
+                    	
+	
+<box x=30 y=41 w=100%-60 h=14 fgcolor=#888888  target="line00" />
+<color fgcolor=#888888  target="selection" /> 
+</box>
+<box x=31 y=41 w=100%-60 h=14 fgcolor=#888888  target="line00" />
+<color fgcolor=#888888  target="selection" /> 
+</box>
+<box x=30 y=54 w=100%-60 h=14 fgcolor=#888888  target="line01" />
+<color fgcolor=#888888  target="selection" /> 
+</box>                    
+<box x=31 y=54 w=100%-60 h=14 fgcolor=#888888  target="line01" />
+<color fgcolor=#888888  target="selection" /> 
+</box>                    	
+<button x="20" y="100%-34"  src="18.png" srcindex="36" target="workspaceLeft"/>
+<button x="100%-48" y="100%-34" src="18.png"srcindex="35" target="workspaceRight"/>
+<button x="100%-34" y="100%-51" src="18.png"srcindex="38" target="workspaceDown"/>
+<button x="100%-34" y="100" src="18.png" srcindex="37" target="workspaceUp"/>
+                   
+	</if>
+	<else>
+
+<button x="40" y="81"  src="18.png" srcindex="34" target="workspaceLeft"/>
+<button x="next" y="81"  src="18.png" srcindex="31" target="workspaceup"/>
+<button x="50%-263" y="81" src="18.png" srcindex="0" target="gotoA" />
+<button x="next" y="same" src="18.png" srcindex="1" target="gotoB" />
+<button x="next" y="same" src="18.png" srcindex="2" target="gotoC" />
+<button x="next" y="same" src="18.png" srcindex="3" target="gotoD" />
+<button x="next" y="same" src="18.png" srcindex="4" target="gotoE" />
+<button x="next" y="same" src="18.png" srcindex="5" target="gotoF" />
+<button x="next" y="same" src="18.png" srcindex="6" target="gotoG" />
+<button x="next" y="same" src="18.png" srcindex="7" target="gotoH" />
+<button x="next" y="same" src="18.png" srcindex="8" target="gotoI" />
+<button x="next" y="same" src="18.png" srcindex="9" target="gotoJ" />
+<button x="next" y="same" src="18.png" srcindex="10" target="gotoK" />
+<button x="next" y="same" src="18.png" srcindex="11" target="gotoL" />
+<button x="next" y="same" src="18.png" srcindex="12" target="gotoM" />
+<button x="next" y="same" src="18.png" srcindex="13" target="gotoN" />
+<button x="next" y="same" src="18.png" srcindex="14" target="gotoO" />
+<button x="next" y="same" src="18.png" srcindex="15" target="gotoP" />
+<button x="next" y="same" src="18.png" srcindex="16" target="gotoQ" />
+<button x="next" y="same" src="18.png" srcindex="17" target="gotoR" />
+<button x="next" y="same" src="18.png" srcindex="18" target="gotoS" />
+<button x="next" y="same" src="18.png" srcindex="19" target="gotoT" />
+<button x="next" y="same" src="18.png" srcindex="20" target="gotoU" />
+<button x="next" y="same" src="18.png" srcindex="21" target="gotoV" />
+<button x="next" y="same" src="18.png" srcindex="22" target="gotoW" />
+<button x="next" y="same" src="18.png" srcindex="23" target="gotoX" />
+<button x="next" y="same" src="18.png" srcindex="24" target="gotoY" />
+<button x="next" y="same" src="18.png" srcindex="25" target="gotoZ" />
+<button x="next" y="same" src="18.png" srcindex="26" target="goto0" />   
+<button x="next+5" y="same" src="18.png" srcindex="30" target="gotocurr" />
+<button x="next+10" y="same" src="18.png" srcindex="0" target="albumView" />
+<button x="next" y="same" src="18.png" srcindex="2" target="coverView" />
+<button x="next" y="same" src="18.png" srcindex="11" target="listView" /> 
+<button x="next" y="same" src="18.png" srcindex="21" target="startVis" />
+<button x="100%-70" y="same"  src="18.png" srcindex="32" target="workspaceDown"/>
+<button x="next" y="same"  src="18.png" srcindex="33" target="workspaceRight"/>
+<box x="27" y="22" w="100%-110" h="21" fgcolor="#2888FB" target="CurrTrack" /> 
+<box x="29" y="22" w="100%-110" h="21" fgcolor="#2888FB" target="CurrTrack" /> 
+<box x="28" y="21" w="100%-110" h="21" fgcolor="#2888FB" target="CurrTrack" /> 
+<box x="28" y="23" w="100%-110" h="21" fgcolor="#2888FB" target="CurrTrack" /> 
+<box x="28" y="22" w="100%-110" h="21" fgcolor="#383838" target="CurrTrack" /> 
+<box x="next+8" y="same" w="55" h="same" fgcolor="#2888FB" target="currtime" />
+<box x="same+2" y="same" w="55" h="same" fgcolor="#2888FB" target="currtime" />
+<box x="same-1" y="same-1" w="55" h="same" fgcolor="#2888FB" target="currtime" />
+<box x="same" y="same+2" w="55" h="same" fgcolor="#2888FB" target="currtime" />
+<box x="same" y="same-1" w="55" h="same" fgcolor="#383838" target="currtime" />
+<button x="50%-75"  y="100%-34" src="18a.png"srcindex="6"target="prev" />
+<button x="next+15" y="same" src="18a.png"srcindex="4" target="stop" />
+<button x="next+15" y="same" src="18a.png"srcindex="3" target="play" />
+<button x="next+15" y="same" src="18a.png"srcindex="5" target="pause" />
+<button x="next+15" y="same" src="18a.png"srcindex="7" target="next" />
+
+<button x="100%-34" y="25%+40" src="18a.png" srcindex="0"target="zoomin" />
+<button x="100%-34" y="50%+21" src="18a.png"srcindex="2" target="zoomnormal" />
+<button x="100%-34" y="75%+3" src="18a.png" srcindex="1"target="zoomout" />
+<button x="25%-40" y="100%-34" src="18a.png"srcindex="8" target="volup" />
+<button x="next+15" y="100%-34" src="18a.png"srcindex="9" target="voldown" /> 
+<button x="75%-20" y="100%-34"  src="repeat.png"srcindex="1" target="repeat" onclick="if(player.repeat!=1){player.repeat=2;}" />
+<button x="next+15" y="100%-34" src="repeat.png"srcindex="0" target="repeat" onclick="if(player.repeat==2){player.repeat=1;}else{player.repeat=0;}" />

@@ -1,0 +1,19 @@
+<-- Mijuke workspace -->
+
+
+    <workspace x="20" w="100%-56" y="108" h="100%-144" />
+       
+        <color bgcolor="#2888FB" fgcolor="#2888FB" hicolor="#2888FB"target="title1" />
+        <color bgcolor="#0050A0" fgcolor="#0050A0" hicolor="#0050A0"target="title2" />
+        <color bgcolor="#101010" fgcolor="#FFFFFF" hicolor="#101010"target="title3" />
+        <color bgcolor="#000000" fgcolor="#000000" target="verttext" />
+        <color bgcolor="#101010" fgcolor="#FFFFFF" target="stubtext" />
+
+        <color bgcolor="#000000" fgcolor="#999999" hicolor="#2888FB"target="normal" />
+        <color bgcolor="#181818" fgcolor="#999999" hicolor="#2888FB"target="normalodd" />
+        <color bgcolor="#999999" fgcolor="#101010" hicolor="#0050A0"target="selection" />
+        <color bgcolor="#868686" fgcolor="#101010" hicolor="#0050A0"target="selectionodd" />
+        
+    </workspace>
+</div>
+

@@ -1,0 +1,20 @@
+<!-- Simple Skin -->
+
+<!-- main background image -->
+<img x="0" y="0" src="maincover.png" />
+
+<!-- current track box -->
+<box x="250" y="750" w="1000" h="150" fgcolor="#CCCCCC" target="CurrTrack" />
+<color fgcolor=#FFFFFF target="selection" />
+</box>
+
+
+
+<!-- volume bar -->
+<!--
+<!scrollbar x=469 y=13 h=178 src="volumeslider.png" target="volslider" /> -->
+
+<!-- next and play buttons -->
+
+<button x="500" y="100" src="play.png" srcindex="0" target="play" /> 
+<button x="900" y="100" src="next.png" class="CalloutRightPhoto" srcindex="0" target="next" /> 

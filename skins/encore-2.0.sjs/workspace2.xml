@@ -1,0 +1,104 @@
+
+<!-- INFO Hier sind die Zeilen für das geteilte Bildschirm Layout ! Linke SEITE ! -->
+
+
+           
+			<box x="0" y="0" w="100%-350" h="100%-40"bgcolor="#155186" />
+
+		
+		
+			<!-- display with twenty lines -->
+
+			
+			<box x="20" y="12" w="100%-40" h="25" target="line00" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line01" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line02" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line03" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line04" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line05" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line06" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line07" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line08" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line09" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line10" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line11" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line12" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line13" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line14" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line15" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line16" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line17" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line18" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        <box x="same" y="next" w="same" h="same" target="line19" fgcolor="#ffffff" bgcolor="#197CD5">
+		         <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line20" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line21" fgcolor="#ffffff" bgcolor="#197CD5">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line22" fgcolor="#ffff00" bgcolor="#153f69">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+			<box x="same" y="next" w="same" h="same" target="line23" fgcolor="#ffffff" bgcolor="#197CD5">
+		        <color target="selection" fgcolor="#ffff00" hicolor="#000000" offsetx="1" offsety="1" />
+	        </box>
+	        
+			
+			<button x="next+22" y="1" src="scroll-buttons.png" srcindex="3" target="displayup" />
+			<scrollbar x="same+4" y="next" h="100%-72" src="scroll-v2.png" target="displayVScroll" />
+			<button x="same-4" y="next" src="scroll-buttons.png" srcindex="2" target="displaydown" />
+
+			
+			   
+			
+			<button x="14" y="100%+12" src="AuswahlPlaylist2.png" srcindex="0" target="openfiles" />
+			<button x="next+2" y="same" src="AuswahlPlaylist2.png" srcindex="1" target="saveplaylist" />
+			<button x="next+2" y="same" src="AuswahlPlaylist2.png" srcindex="2" target="unqueueall" />
+			<button x="next+2" y="same" src="AuswahlPlaylist2.png" srcindex="3" onclick="shufflePlaylist()" />
+			<button x="next+2" y="same" src="AuswahlPlaylist2.png" srcindex="4" target="removePlayed" />
+			<button x="next+2" y="same" src="AuswahlPlaylist2.png" srcindex="5" target="shuffle" />
+</box>
+
+
+
+

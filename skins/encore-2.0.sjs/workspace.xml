@@ -1,0 +1,27 @@
+		
+		<box x="0" y="0" w="100%" h="100%" bgcolor="#000000" /> 
+
+		<workspace x="0" y="0" w="100%-224" h="100%-50">
+			<color fgcolor="#ffffff" bgcolor="#155186" hicolor="#FF9C9C" target="normal" />
+		<color fgcolor="#ffffff" bgcolor="#153f69" hicolor="#FF9C9C" target="normalodd" />
+		<color fgcolor="#ffffff" bgcolor="#197CD5" hicolor="#FF9C9C" target="selection" />
+		<color fgcolor="#ffffff" bgcolor="#1f72bd" hicolor="#FF9C9C" target="selectionodd" />
+		<color fgcolor="#81C1FB" bgcolor="#040C15" hicolor="#FF9C9C" target="title1" />
+		<color fgcolor="#00ffff" bgcolor="#040C15" hicolor="#FF9C9C" target="title2" />
+		<color fgcolor="#d4d4d4" bgcolor="#040C15" hicolor="#FF9C9C" target="title3" />
+		<color fgcolor="#d4d4d4" target="verttext" />
+		<color fgcolor="#d4d4d4" target="stubtext" />
+		</workspace>
+
+		
+			<button x="50%-623" y="100%-45" src="PfeilLinks.png" target="workspaceLeft" />
+            <!button x="next" y="same" src="PfeilHoch.png" target="WorkspacePageUp" />
+			<!button src="Add.png" x="next" y="same" target="EnqueueLast" />
+			<!button src="PfeilRunter.png" target="WorkspacePageDown"  x="next" y="same"  />
+			<button x="50%+270" y="100%-45" src="PfeilRechts.png" target="workspaceRight"  x="next" y="same"  />
+		
+		<div x="100%-210" h="100%">
+			<!<button target="workspaceUp" src="scroll-buttons.png" srcindex="3" x="-13" y="0" />
+			<scrollbar target="workspaceVScroll" src="scroll-v2.png" x="-10" y="next+1" h="100%-52" />
+			<!<button target="workspaceDown" src="scroll-buttons.png" srcindex="2" x="-13" y="next+1" />
+		</div>

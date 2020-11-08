@@ -1,0 +1,48 @@
+	<div w="100%" h="90">
+		<box x="0" y="0" w="100%" h="100%" bgcolor="#000000" />
+		       
+		
+
+
+<box x="50%-412" y="8" w="60" h="60" target="displaycover" />
+
+
+
+<box x="next+5" y="same" w="525" h="15" fgcolor="#ffffff" target="line00">
+  <color target="selection" fgcolor="#ffffff" hicolor="ffffff" offsetx="1" offsety="0" />
+</box>
+<box x="same+10" y="next+8" w="525" h="15" fgcolor="#FCFF00" target="line01">
+  <color target="selection" fgcolor="#FCFF00" hicolor="#FCFF00" offsetx="0" offsety="0" />
+</box>
+<box x="same" y="next+8" w="525" h="15" fgcolor="#FCFF00" target="line02">
+  <color target="selection" fgcolor="#FCFF00" hicolor="#FCFF00" offsetx="0" offsety="0" />
+</box>
+
+
+
+
+        <box x="next+18" y="5" w="90" h="40" fgcolor="white" text="Artist:" /> 
+		<box x="same" y="next+8" w="110" h="40" fgcolor="white" text="Song:" />
+		<box x="next+5" y="15" w="280" h="25" fgcolor="white" id="artist" />
+		<box x="same" y="next+23" w="330" h="25" fgcolor="white" id="title" />
+
+
+
+		<if cond="shaped">
+			<button x="5" y="5" target="mainmenu" cmw="76" src="title-menu.png" />
+			<if cond="!kiosk">
+				
+				<button x="100%-90" target="minimize" src="title-right.png" srcindex="0" />
+				<button x="next" target="maximize" src="title-right.png" srcindex="1" />
+				<button x="next" target="quit" src="title-right.png" srcindex="2" />
+			</if>
+		</if>
+		<else>
+			<if cond="kiosk">
+				<button x="5" y="5" src="title-menu.png" srcindex="0" target="togglekiosk"/>
+			</if>
+		</else>
+		<button x="5" y="5" src="title-menu.png" srcindex="0" target="togglekiosk"/>
+		</else>
+		
+	</div>

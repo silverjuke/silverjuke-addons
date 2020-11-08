@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<skin debuginfo="0" debugoutline="0" name="Encore 2.0"
+      about="Encore 2.0 Skin by damanbaird">
+
+	
+	
+	<script src="main.sj" />
+	
+
+	<!-- default layout: CoverView -->
+	<layout name="default" minw="1080" minh="800" usew="default" useh="default" usepos="default">
+
+		<shape x="0" y="0" src="shape1.png" />
+		<shape x="100%-8" src="shape2.png" />
+		<shape x="100%-8" y="100%-8" src="shape3.png" />
+        	<shape y="100%-8" src="shape4.png" /> 
+
+		<!-- title bar: height: 73px -->
+		<include file="titlebar.xml" />
+			
+
+		<!-- workspace -->
+		<div x="8" y="next" w="100%-16" h="100%-60">
+			<include file="workspace.xml" />
+			<include file="now_playing.xml" />
+			<include file="notebook.xml" />
+
+		</div>
+
+	
+	
+		<!-- resizer -->
+		<if cond="!kiosk">
+			<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+		</if>
+
+	</layout>
+
+	
+
+	<!-- now_playing layout: -->
+	<layout name="now_playing" minw="1080" minh="800" usew="default" useh="default" usepos="default">
+
+		<shape x="0" y="0" src="shape1.png" />
+		<shape x="100%-8" src="shape2.png" />
+		<shape x="100%-8" y="100%-8" src="shape3.png" />
+        	<shape y="100%-8" src="shape4.png" /> 
+
+		<!-- title bar: height: 23px -->
+		<include file="titlebar2.xml" />
+			
+		
+
+		<!-- workspace -->
+		<div x="8" y="next" w="100%-16" h="100%-60">
+			<include file="now_playing-xl.xml" />
+		</div>
+
+		
+<!-- display with three lines -->
+		
+		
+				
+				
+		<!-- resizer -->
+		<if cond="!kiosk">
+			<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+		</if>
+
+	</layout>
+	
+
+
+	<!-- New layout: View Party - for Selection in large view -->
+	<layout name="new" minw="1280" minh="800" usew="default" useh="default" usepos="default">
+
+		<shape x="0" y="0" src="shape1.png" />
+		<shape x="100%-8" src="shape2.png" />
+		<shape x="100%-8" y="100%-8" src="shape3.png" />
+		<shape y="100%-8" src="shape4.png" /> 
+
+		<!-- title bar: height: 23px -->
+		<include file="titlebar.xml" />
+		
+
+		<!-- workspace -->
+		<div x="8" y="next" w="100%-16" h="100%-60">
+
+			<include file="workspace.xml" />
+			<include file="now_playing.xml" />
+            <include file="notebook.xml" />
+			
+		</div>
+
+		
+
+		<!-- resizer -->
+		<if cond="!kiosk">
+			<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+		</if>
+
+	</layout>
+	
+	<!-- Playlist Layout -->
+
+	<layout name="playlistview" usew="default" useh="default" usepos="default" minw="800" minh="720" doubleclicktarget="layout:mini">
+
+
+        <shape x="0" y="0" src="shape1.png" />
+		<shape x="100%-8" src="shape2.png" />
+		<shape x="100%-8" y="100%-8" src="shape3.png" />
+		<shape y="100%-8" src="shape4.png" /> 
+
+		<!-- title bar: height: 23px -->
+		<include file="titlebar2.xml" />
+		
+
+		<!-- workspace -->
+		<div x="8" y="next" w="100%-16" h="100%-60">
+
+			<include file="workspace2.xml" />
+			<include file="now_playing5.xml" />
+            
+			
+		</div>
+
+		
+
+		<!-- resizer -->
+		<if cond="!kiosk">
+			<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+		</if>
+
+			
+			
+        <!-- resizer -->
+		<if cond="!kiosk">
+			<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+		
+
+		</if>
+
+	</layout>
+
+</skin>
+

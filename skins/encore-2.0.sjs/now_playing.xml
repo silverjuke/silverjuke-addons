@@ -1,0 +1,57 @@
+		
+		
+
+
+ 
+	
+	
+
+
+
+
+	<!if cond="search">
+	    <!button onclick="program.layout = "new";" x="100%-100" y="50%-265" src="Auswahl.png" srcindex="5" target="searchbutton"  />
+		<!button onclick="NowPlayingOff();" x="same" y="same" src="Auswahl.png" srcindex="5" target="searchbutton"  /> 
+		<input x="100%-160" y="1" w="150" h="24" fgcolor="black" bgcolor="white" />
+		<box x="100%-160" y="next" w="140" h="16" target="searchinfo" inactive="1" fgcolor="white" />
+	    </if>
+	
+
+			
+	<!--navigation-->
+	<!button x="100%-100" y="50%-215" src="Auswahl.png" srcindex="2" onclick="program.viewMode=1; return true;" target="layout:default" />
+	<!button x="same" y="next+5" src="Auswahl.png" srcindex="1" onclick="program.viewMode=0; return true;" target="layout:AlbumView" />
+	<!button x="same" y="next+5" src="Auswahl.png" srcindex="3" onclick="program.viewMode=2;program.listModeColumns=[79,2,64,512,32768,4]; program.listModeOrder=-79; return true;" target="GotoFirst" />
+	<!button onclick="NowPlayingOn();" x="same" y="next+5" src="Auswahl.png" srcindex="0" />
+	<!button x="same" y="next+5" src="Auswahl.png" srcindex="4" target="layout:playlistview" />
+	<!button x="same" y="next+5" src="Auswahl.png" srcindex="6" onclick="program.viewMode=0;return true;" target="gotocurr" />
+	<!button onclick="program.search=player.getAlbumAtPos (player.queuePos); program.viewMode=2;" target="layout:new" x="same" y="next+5" src="Auswahl.png" srcindex="6" />
+	<!button onclick="program.search=player.getArtistAtPos(player.queuePos); program.viewMode=2;program.listModeColumns=[64,32768,512,4,2,79]; program.listModeOrder=32768; return true " target="GotoFirst" x="same" y="next+5" src="Auswahl.png" srcindex="7" /> 
+	<!button x="same" y="next+5" src="Zoom.png" srcindex="0" target="ZoomOut" />
+	<!button x="next" y="same" src="Zoom.png" srcindex="1" target="ZoomNormal" />
+	<!button x="next" y="same" src="Zoom.png" srcindex="2" target="ZoomIn" />
+	
+	<if cond="playpause">
+				<!button target="play" x="100%-110" y="100%-90" onclick="ScreenUpdate();" src="play60x60.png" />
+			</if>
+			<else>
+				<!button target="enqueueLast" x="same" y="same" src="play60x60.png" />
+			</else>
+	<!-- play, prev, next -->
+			<if cond="editqueue">
+				<!button onclick="fastfw();" x="same-52" y="same+5" src="play-control.png" srcindex="2" />
+				<!button target="next" x="next+68" y="same" src="play-control.png" srcindex="8" />
+				
+		
+	
+	
+	<!if cond="volume">
+				<!if cond="volume">
+				<!button target="voldown" x="100%-160" y="100%-40" src="control-vol-udklein.png" srcindex="0" />
+				<!scrollbar target="volslider" x="next+2" y="same+8" w="104" src="control-vol2flach2.png" />
+				<!button target="volup" x="next+1" y="100%-40" src="control-vol-udklein.png" srcindex="1" />
+			</if>
+				
+				
+			</if>
+  

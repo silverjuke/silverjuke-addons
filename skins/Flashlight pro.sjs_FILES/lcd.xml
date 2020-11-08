@@ -1,0 +1,7 @@
+			<!-- scalable LCD -->
+
+			<img h="100%" src="lcd_left.png" />
+			<img x="next" w="100%-12" src="lcd_top.png" />
+			<box x="same" y="next" w="same" h="100%-15" bgcolor="#cbcfe5" />
+			<img x="same" y="100%-6" w="same" src="lcd_bottom.png" />
+			<img x="next" h="100%" src="lcd_right.png" />

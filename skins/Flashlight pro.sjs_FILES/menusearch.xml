@@ -1,0 +1,46 @@
+			<!-- menue with search -->
+			<div y="next" w="100%" h="65">
+			<img src="menu-bg.png" w="100%" />
+			<box x="24" y="5" w="1" h="1" bgcolor="#000000" /> <!-- init position -->
+			
+						
+			<if cond="albumView">
+				<button x="11" y="3" src="menu-check.png" srcindex="0" target="albumView" />
+			</if>
+			<if cond="coverView">
+				<button x="next" y="same" src="menu-check.png" srcindex="1" target="coverView" />
+			</if>
+			<if cond="listView">
+				<button x="next" y="same" src="menu-check.png" srcindex="2" target="listView" />
+			</if>
+			<if cond="startVis"> 
+			<button x="next" y="same" src="menu-check.png" srcindex="3" target="startVis" /> 
+			</if>
+			
+			</div>
+			
+			
+			<!--searchfield-->
+			<if cond="search">
+			<div x="100%-457" y="24" w="350" h="51" />
+				<box x="8" y="6" w="100%-48" h="21" bgcolor="#585858" />
+				<input x="8" y="20" w="100%-48" h="30" bgcolor="#585858" fgcolor="#ffffff" hicolor="#ffffff" />
+				<button x="next" y="3" src="search-buttons.png" srcindex="0" target="searchbutton" />
+				<button x="next" y="same" src="search-buttons.png" srcindex="1" target="searchbutton" cmw="58" />
+				<box x="8" y="6" w="100%-14" h="14" fgcolor="#ffffff" target="searchinfo" inactive="1" />
+				<button target="layout:default" x="100%-411" y="3" src="more-search.png" srcindex="1" tooltip="end more search" />
+			</div>
+			</if>
+			
+			
+			
+			
+			
+			
+			
+		
+		
+
+			
+		
+		

@@ -1,0 +1,96 @@
+			<!-- View Now Playling -->
+			<div x="8" y="86" w="300" h="100%-149" />
+			<img x="-8" y="same" h="100%" src="outer-bg-left.png" />
+			<box x="0" y="same" w="300" h="same" bgcolor="#000000" />
+			
+			</div>		
+		 
+			<!-- cover -->
+
+			<box x="8" y="same" h="292" w="292" target="displaycover" />
+			<img x="same" y="next" w="292" src="outer-horizontal.png" />
+	
+			<!-- rating -->
+			
+			<button x="10" y="next+4" src="bg-rate.png" srcindex="0" onclick="setRating1();" />
+			<button x="next" y="same" src="bg-rate.png" srcindex="1" onclick="setRating2();" />
+			<button x="next" y="same" src="bg-rate.png" srcindex="2" onclick="setRating3();" />
+			<button x="next" y="same" src="bg-rate.png" srcindex="3" onclick="setRating4();" />
+			<button x="next" y="same" src="bg-rate.png" srcindex="4" onclick="setRating5();" />
+			<button x="next+15" y="same" src="bg-rate.png" srcindex="6" onclick="setRating0();"/ />	
+
+			<box x="10" y="same"  h="20" b="10" fgcolor="#808080"  id="rating1aus" />
+			<box x="next" y="same"  h="20" b="10" fgcolor="#808080"  id="rating2aus" />
+			<box x="next" y="same"  h="20" b="10" fgcolor="#808080"  id="rating3aus" />
+			<box x="next+3" y="same"  h="20" b="10" fgcolor="#808080"  id="rating4aus" />
+			<box x="next+3" y="same"  h="20" b="10" fgcolor="#808080"  id="rating5aus" />
+			<box x="next+13" y="same"  h="20" b="10" fgcolor="#808080"  id="rating0aus" />
+				
+			<box x="10" y="same-6" w="121" h="47" fgcolor="#ffff00" id="rating" />
+			<box x="10" y="next-9" h="18" w="290" fgcolor="#ffffff" id="now_title" />
+			<img x="8" y="next+2" w="292" src="outer-horizontal.png" />
+			
+			<!-- more information now playling -->
+	
+			
+			<box x="10" y="next+2" h="18" w="290" fgcolor="#ffc928" id="now_artist" />
+			<box x="same" y="next+3" h="same" w="same" fgcolor="#78d2ff" id="now_album" />
+			<img x="8" y="next+1" w="292" src="outer-horizontal.png" />
+			
+			
+			<!-- selection artist and album and now -->
+			<button target="gotoCurr" x="11" y="next+1" src="select-picture.png" srcindex="3" />
+			<button onclick="program.search=player.getArtistAtPos(player.queuePos); program.viewMode=1" x="next+1" y="same" src="select-picture.png" srcindex="1" />
+            <button onclick="program.search=player.getAlbumAtPos(player.queuePos); program.viewMode=0" x="next+1" y="same" src="select-picture.png" srcindex="0" />
+			<button onclick="program.search='';" x="next+1" y="same" src="select-picture.png" srcindex="2" /> 
+			<img x="8" y="next+2" w="292" src="outer-horizontal.png" />
+			
+			<!-- search a-z-->
+			<div x="11" y="next+5" w="290" h="89">
+							
+				<button target="gotoA" x="2" y="1" src="az.png" srcindex="0" />
+				<button target="gotoB" x="next+7" y="same" src="az.png" srcindex="1" />
+				<button target="gotoC" x="next+7" y="same" src="az.png" srcindex="2" />
+				<button target="gotoD" x="next+7" y="same" src="az.png" srcindex="3" />
+				<button target="gotoE" x="next+7" y="same" src="az.png" srcindex="4" />
+				<button target="gotoF" x="next+7" y="same" src="az.png" srcindex="5" />
+				<button target="gotoG" x="next+7" y="same" src="az.png" srcindex="6" />
+				<button target="gotoH" x="next+7" y="same" src="az.png" srcindex="7" />
+				<button target="gotoI" x="next+7" y="same" src="az.png" srcindex="8" />
+				<button target="gotoJ" x="2" y="next+7" src="az.png" srcindex="9" />
+				<button target="gotoK" x="next+7" y="same" src="az.png" srcindex="10" />
+				<button target="gotoL" x="next+7" y="same" src="az.png" srcindex="11" />
+				<button target="gotoM" x="next+7" y="same" src="az.png" srcindex="12" />
+				<button target="gotoN" x="next+7" y="same" src="az.png" srcindex="13" />
+				<button target="gotoO" x="next+7" y="same" src="az.png" srcindex="14" />
+				<button target="gotoP" x="next+7" y="same" src="az.png" srcindex="15" />
+				<button target="gotoQ" x="next+7" y="same" src="az.png" srcindex="16" />
+				<button target="gotoR" x="next+7" y="same" src="az.png" srcindex="17" />
+				<button target="gotoS" x="2" y="next+7" src="az.png" srcindex="18" />
+				<button target="gotoT" x="next+7" y="same" src="az.png" srcindex="19" />
+				<button target="gotoU" x="next+7" y="same" src="az.png" srcindex="20" />
+				<button target="gotoV" x="next+7" y="same" src="az.png" srcindex="21" />
+				<button target="gotoW" x="next+7" y="same" src="az.png" srcindex="22" />
+				<button target="gotoX" x="next+7" y="same" src="az.png" srcindex="23" />
+				<button target="gotoY" x="next+7" y="same" src="az.png" srcindex="24" />
+				<button target="gotoZ" x="next+7" y="same" src="az.png" srcindex="25" />
+				<button target="goto0" x="next+7" y="same" src="az.png" srcindex="26" />
+				
+							
+			</div>
+			
+			<img x="8" y="next+6" w="292" src="outer-horizontal.png" />
+	
+			<box x="10" y="next+2" h="15" w="190" fgcolor="#f4eed9" id="now_info0" />
+			<box x="same" y="next+1" h="same" w="same" fgcolor="#f4eed9" id="now_info1" />
+			<box x="same" y="next+1" h="same" w="same" fgcolor="#f4eed9" id="now_info2" />
+			<box x="same" y="next+1" h="same" w="same" fgcolor="#f4eed9" id="now_info3" />
+			<box x="same" y="next+5" h="15" w="same" fgcolor="#888888" id="now_next" />
+			<box x="same" y="next" h="17" w="285" fgcolor="#ffc928" id="now_next_title" />
+			<box x="same" y="next" h="same" w="same" fgcolor="#ffffff" id="now_next_artist" />
+			
+			<!--time-->
+			<box x="10" y="100%-105" w="100" h="23" fgcolor="#e1a900" hicolor="#e1a900" target="CurrTime" />
+		
+		
+		

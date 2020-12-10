@@ -1,0 +1,147 @@
+			<!-- playlist wide and large -->
+			<div x="100%-598" y="86" w="590" h="100%-165" />
+			
+			<img x="100%" y="same" h="100%" src="outer-bg-right.png" />
+			<box x="-8" y="same" w="598" h="100%" bgcolor="#000000" />
+			
+			
+			
+			<div x="100%-35" h="100%" w="100%-30">
+				<button target="displayUp" src="scroll-buttons-playlist.png" srcindex="0" y="15" />
+				<scrollbar target="displayVScroll" src="scroll-v-playlist.png" y="next" h="723" />
+				<button target="displayDown" src="scroll-buttons-playlist.png" srcindex="1" y="next" />
+				
+			</div> 
+		
+			<!-- playlist with 39 lines  height = 20 big-->
+			<box x="0" y="17" w="100%-47" h="20" target="line00" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line01" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line02" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line03" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line04" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line05" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line06" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line07" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line08" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line09" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line10" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line11" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line12" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line13" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line14" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line15" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line16" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line17" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line18" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line19" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line20" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line21" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line22" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line23" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line24" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line25" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line26" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line27" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line28" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line29" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line30" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line31" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line32" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line33" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line34" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line35" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line36" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line37" fgcolor="#F4EED9">
+				<color target="selection" fgcolor="#F4EED9" hicolor="#000000" offsetx="1" offsety="1" />							
+			</box>
+			<box x="same" y="next" w="same" h="same" target="line38" fgcolor="#F9EBBA">
+				<color target="selection" fgcolor="#F9EBBA" hicolor="#000000" offsetx="1" offsety="1" />
+			</box>
+					
+			
+			
+			<!-- open, save, burn, remove playlist-->
+			<button x="0" y="100%-50" src="playlistwide.png" srcindex="1" target="layout:playlistlarge" />
+			<button x="next" y="100%-55" src="playlist-select.png" srcindex="2" target="openfiles" />
+			<button x="next" y="same" src="playlist-select.png" srcindex="3" target="saveplaylist" />
+			<button x="next" y="same" src="playlist-select.png" srcindex="4" target="unqueueall" />
+			<button x="next" y="same" src="playlist-select.png" srcindex="1" target="burnqueue" />
+			<button x="next" y="same" src="playlist-select.png" srcindex="0" target="removePlayed" />
+			<button x="next" y="100%-50" src="playlistupdown.png" srcindex="1" target="layout:playlistwide" />
+						
+			</div>		
+				

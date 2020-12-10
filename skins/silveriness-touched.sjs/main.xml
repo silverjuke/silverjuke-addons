@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<skin debugoutline="0" name="Silveriness Touched" about="Version 15.10, skin created by Björn Petersen.">
+
+	<tooltips bgcolor="#E6E6E6" fgcolor="#232323" bordercolor="#000000" />
+
+	<!-- default layout -->
+	<layout name="default" usew="default" useh="default" usepos="default" minw="640" minh="384">
+
+		<img x="0" y="0" w="100%" h="100%" src="z_bg.png" />
+	
+		<div x="22" y="27" w="125" h="53" >
+			<include file="z_ctrl.xml" />
+		</div>
+		
+		<div x="25%" y="15" w="50%" h="52">
+			<include file="z_disp.xml" />
+		</div>
+		<button x="60%-2" y="78" src="z_disp_size.png" target="layout:Large" tooltip="Enlarge display" />
+
+		<div x="-1" y="95" w="100%+2" h="100%-94" target="visrect" indent="1,0,0,0">
+			<include file="z_workspace.xml" />
+		</div>
+		
+		<div x="86%-32" y="36" w="14%+10" h="36">
+			<include file="z_search.xml" />
+		</div>
+		
+	</layout>
+	
+	<!-- large display layout -->
+	<layout name="Large" minw="640" minh="520" usew="default" useh="default" usepos="default">
+		<img x="0" y="0" w="100%" h="100%" src="z_bg.png" />
+		
+		<div x="22" y="27" w="125" h="53" >
+			<include file="z_ctrl.xml" />
+		</div>
+
+		<div x="25%" y="15" w="50%" h="204">
+			<include file="z_disp_large.xml" />
+		</div>
+		<button x="60%-2" y="221" src="z_disp_size.png" srcindex="1" target="layout:Default" tooltip="Shrink display" />
+		
+		<div x="-1" y="238" w="100%+2" h="100%-237" target="visrect" indent="1,0,0,0">
+			<include file="z_workspace.xml" />
+		</div>
+
+		<div x="86%-32" y="36" w="14%+10" h="36">
+			<include file="z_search.xml" />
+		</div>
+		
+	</layout>
+	
+	<!-- kiosk layout -->
+	<layout name="kiosk" minw="640" minh="300">
+
+		<img x="0" y="0" w="100%" h="100%" src="z_bg.png" />
+
+		<div x="27%" y="18" w="46%" h="52">
+			<include file="z_disp_kiosk.xml" />
+		</div>
+		<if cond="enlargedisplay">
+			<button x="60%-2" y="81" src="z_disp_size.png" target="layout:kioskLarge" tooltip="Enlarge display" />
+		</if>
+
+		<div x="22" y="27" w="125" h="53" >
+			<include file="z_ctrl.xml" />
+		</div>
+
+		<div x="16" y="98" w="100%-32" h="100%-114" target="visrect" indent="1,0,0,0">
+			<include file="z_workspace.xml" />
+		</div>
+
+		<if cond="search">
+			<div x="86%-32" y="36" w="14%+10" h="36">
+				<include file="z_search.xml" />
+			</div>
+		</if>
+
+	</layout>
+
+	<!-- large kiosk layout -->
+	<layout name="kioskLarge" minw="640" minh="300">
+
+		<img x="0" y="0" w="100%" h="100%" src="z_bg.png" />
+
+		<div x="27%" y="18" w="46%" h="204">
+			<include file="z_disp_kiosk_large.xml" />
+		</div>
+		<button x="60%-2" y="224" src="z_disp_size.png" srcindex="1" target="layout:kiosk" tooltip="Shrink display" />
+
+		<div x="22" y="27" w="125" h="53" >
+			<include file="z_ctrl.xml" />
+		</div>
+
+		<div x="16" y="241" w="100%-32" h="100%-257" target="visrect" indent="1,0,0,0">
+			<include file="z_workspace.xml" />
+		</div>
+
+		<if cond="search">
+			<div x="86%-32" y="36" w="14%+10" h="36">
+				<include file="z_search.xml" />
+			</div>
+		</if>
+
+	</layout>
+
+</skin>

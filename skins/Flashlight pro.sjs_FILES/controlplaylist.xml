@@ -1,0 +1,58 @@
+			<!-- Control : with playlist -->
+			
+			
+			<img x="0" y="0" w="100%" src="control-bg.png" />
+
+			<!-- seek -->
+			<if cond="editQueue">
+				<scrollbar target="seek" x="16" y="2" w="100%-25" src="control-seek.png" hideifunused="1" />
+			</if>
+			<else>
+				<scrollbar target="seek" x="16" y="2" w="100%-25" src="control-seek-disabled.png" hideifunused="1" />
+			</else>
+
+			<!-- shuffle, repleat, volume -->
+			<if cond="editQueue">
+				<button target="shuffle" x="328" y="32" src="control-shuffle.png" srcindex="0" />
+			</if>
+			<if cond="!kiosk">
+				<button target="repeat" x="363" y="32" src="control-shuffle.png" srcindex="1" />
+			</if>
+			<if cond="volume">
+				<button target="voldown" x="18" y="32" src="control-shuffle.png" srcindex="2" /> 
+				<button target="volup" x="285" y="32" src="control-shuffle.png" srcindex="3" /> 
+				<scrollbar target="volslider" x="43" y="31" w="241" src="control-vol.png" />
+			</if>
+
+			<!-- play, prev, next -->
+			<if cond="editqueue">
+				<button target="prev" x="57%-269" y="32" src="control-rwdfwd.png" srcindex="0" />
+			    <button x="57%-222" y="32" src="control-prevnext.png" srcindex="0" onclick="if (player.time>10000){player.time-=10000;}else{player.time=0;}" />
+				<button x="57%-111" y="32" src="control-prevnext.png" srcindex="1" onclick="if ((player.duration-player.time)>10100){player.time+=10000;}else{player.time=player.duration;}" />
+				<button target="next" x="57%-64" y="32" src="control-rwdfwd.png" srcindex="1" />
+				
+			</if>
+			<if cond="playpause">
+				<button target="play" x="57%-172" y="23" src="control-play.png" />
+			</if>
+			<else>
+				<button target="enqueueLast" x="57%-182" y="23" src="control-play.png" />
+			</else>
+
+			
+			</if>
+						
+			
+					
+			
+			<!-- new view - Playlist-->
+			
+			<button target="layout:default" x="100%-95" y="22" src="playlist.png" srcindex="1" tooltip="close playlist" />
+			
+			
+			<!-- playlist infos-->
+			<box x="100%-300" y="23" w="132" h="20" fgcolor="#a4a4a4" hicolor="#a4a4a4" text="Tracks in Playlist" /> 
+			<box x="next+3" y="same" w="55" h="same" fgcolor="#ffffff" hicolor="#ffffff" id="playlisttotalnumber" />
+			<box x="100%-300" y="next+2" w="90" h="same" fgcolor="#727272" hicolor="#727272" text="Total time" /> 
+			<box x="next+23" y="same" w="80" h="same" fgcolor="#d0d0d0" hicolor="#d0d0d0" id="playlistlength" />
+			

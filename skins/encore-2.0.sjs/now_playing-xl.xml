@@ -1,0 +1,88 @@
+		<box x="-8" y="0" w="8" h="100%" bgcolor="#000000" />
+		<box x="100%" y="0" w="8" h="100%" bgcolor="#000000" />
+		<box x="0" y="0" w="100%-110" h="100%-16" bgcolor="#155186" /> 
+
+		
+
+		
+			<box x="100%-260" y="100%+10" h="20" w="220" fgcolor="#ffffff" id="datum" />
+				<box x="100%-70" y="same" h="20" w="150" fgcolor="#ffffff" id="uhrzeit" />
+
+		
+		<box x="37" y="50%-290" w="570" h="570" border="1" fgcolor="#ffffff" bgcolor="#000000" />
+        <box x="47" y="50%-280" w="550" h="550" target="displaycover" />
+	
+
+
+		<box x="620" y="50%-256" w="450" h="28" fgcolor="#ffffff" id="artist" />
+		<box x="same" y="next" w="same" h="12" text="Artist" />
+                <box x="same" y="next+10" w="500" h="20" fgcolor="#ffffff" id="album" />
+				<box x="same" y="next" w="same" h="12" text="Album" />
+         	<box x="same" y="next+10" w="520" h="30" fgcolor="#ffffff" id="title" />
+			<box x="same" y="next" w="same" h="12" text="Song" />
+			<!box x="620" y="next+10" w="80" h="20" fgcolor="#ffffff" target="currtime" />
+		<!box x="next" y="same" w="29" h="same" fgcolor="#000000" text="/" />
+		<!box x="same" y="next+10" w="80" h="20" fgcolor="#ffffff" id="titellength" />
+		<!box x="620" y="next" w="same" h="12" text="Zeit" />
+		<box x="620" y="next+10" w="100" h="22" fgcolor="#ffffff" id="YearTest" />
+		<box x="same" y="next" w="same" h="12" text="Year" />
+		<!box x="same" y="next+10" w="100%-865" h="22" fgcolor="#ffffff" id="TestGenre" />
+		<!box x="same" y="next" w="same" h="12" text="Musikrichtung" />
+		<!box x="620" y="next+10" h="20" w="190" fgcolor="#ffffff" id="TestBitrate" />
+		<!box x="same" y="next" w="same" h="12" text="Bitrate" />
+		<!box x="same" y="next+10" h="20" w="same" fgcolor="#ffffff" id="TestSamplerate" />
+		<!box x="same" y="next" w="same" h="12" text="Samplerate" />
+		<!box x="same" y="next+10" h="20" w="same" fgcolor="#ffffff" id="TestChannels" />
+		<!box x="same" y="next" w="same" h="12" text="Channels" />
+		<!box x="same" y="next+10" h="32" w="same" fgcolor="#ffffff" id="TestAbspielungen" />
+        <!box x="same" y="next" w="same" h="12" text="Anzahl Abspielungen" />
+		<!box x="same" y="next+5" w="300" h="78" fgcolor="#ffff00" id="rating" font="WP IconicSymbolsA"/>
+		<!box x="same" y="next-32" w="same" h="12" text="Songbewertung" />
+		
+        <box x="100%-380" y="100%-134" w="265" h="60" border="1" fgcolor="#000000"  />
+		<box x="100%-370" y="100%-125" w="75" h="20" fgcolor="#000000" id="playlisttotalnumber" />
+		<box x="next" y="same" w="180" h="same" fgcolor="#000000" text="Titles in playlist" /> 
+		<box x="100%-370" y="next+4" w="75" h="same" fgcolor="#000000" id="playlistlength" />
+		<box x="next" y="same" w="180" h="same" fgcolor="#000000" text="entire playtime" /> 
+		
+		<!--navigation-->
+		<if cond="playpause">
+				<!button target="play" x="100%-80" y="50%-180" onclick="ScreenUpdate();" src="play60x60.png" />
+			</if>
+			<else>
+				<!button target="enqueueLast" x="same" y="same" src="play60x60.png" />
+			</else>
+	<!-- play, prev, next -->
+			<if cond="editqueue">
+				<!button onclick="fastfw();" x="same-22" y="next" src="play-control.png" srcindex="2" />
+				<!button target="next" x="next+13" y="same" src="play-control.png" srcindex="8" />
+				
+			</if>
+
+			
+	<!--navigation-->
+	<!button onclick="NowPlayingOff();" x="100%-100" y="next+5" src="Auswahl.png" srcindex="2" target=CoverView/>
+	<!button x="same" y="next+5" src="Auswahl.png" srcindex="4" target="layout:playlistview" />
+	<button x="100%-100" y="next+5" src="Auswahl.png" srcindex="6" onclick="aktuelleCD();" target="gotocurr" />
+	<!button onclick="program.search=player.getAlbumAtPos (player.queuePos); program.viewMode=2;" target="layout:new" x="same" y="next+5" src="Auswahl.png" srcindex="6" />
+	<!button onclick="program.search=player.getArtistAtPos(player.queuePos); NowPlayingOff(); program.viewMode=2;program.listModeColumns=[64,32768,512,4,2,79]; program.listModeOrder=32768,64; return true" target="GotoFirst" x="same" y="next+5" src="Auswahl.png" srcindex="7" /> 
+
+	
+	
+	
+	<if cond="volume">
+				<!if cond="volume">
+				<!button target="voldown" x="100%-280" y="-29" src="control-vol-udklein.png" srcindex="0" />
+				<!scrollbar target="volslider" x="next+2" y="same+8" w="104" src="control-vol2flach2.png" />
+				<!button target="volup" x="next+1" y="-29" src="control-vol-udklein.png" srcindex="1" />
+			</if>
+
+
+<if cond="editQueue">
+	<scrollbar target="seek" x="48" y="100%-30" w="100%-210" src="control-seek.png" hideifunused="1" />
+</if>
+<else>
+	<scrollbar target="seek" x="60" y="100%-30" w="100%-280" src="control-seek-disabled.png" hideifunused="1" />
+</else>
+<box x="5" y="100%-34" w="80" h="20" fgcolor="#ffffff" target="currtime" />
+<box x="100%-155" y="same" w="50" h="20" fgcolor="#ffffff" id="titellength" />

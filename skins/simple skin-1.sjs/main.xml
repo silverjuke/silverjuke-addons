@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+	<skin debugoutline="0"  name="Born To Work" about="Stefanie Heim" />
+		<tooltips bgcolor="#E6E6E6" fgcolor="#232323" bordercolor="#000000" />
+		<layout name="a" minw="1920" minh="1080" maxw="1920" maxh="1080" />
+			<include src="1.xml" />
+		</layout>
+	</skin>
+

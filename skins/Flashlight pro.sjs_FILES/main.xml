@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<script src="main.sj" />
+</script>
+<skin debuginfo="0" debugoutline="0" name="flashlight pro" about="published by Pelikan - scripts by SilverEagle">
+             
+			 
+	
+
+			<!--Layout  - no search no playlist-->
+			<layout name="default" usew="default" useh="default" usepos="default" minw="1200" minh="900" >
+
+		    <!-- shape -->
+		    <shape x="0" y="0" src="shape1.png" />
+			<shape x="100%-8" src="shape2.png" />
+			<shape x="100%-8" y="100%-8" src="shape3.png" />
+			<shape y="100%-8" src="shape4.png" /> 
+		
+			<!-- title bar: height: 23px-->
+			<include file="titlebar.xml" />
+			<!-- menu bar: height: 65px-->
+		    <include file="menu.xml" />
+			<!-- left side now playing-->
+			<include file="nowplaying.xml" />
+			<!-- workspace -->
+			<div x="308" y="86" w="100%-316" h="100%-166" target="visrect">
+			<include file="workspace.xml" />
+			</div>
+			<!-- control: height 69px-->			
+			<div x="0" y="next" w="100%" h="81">
+			<include file="control.xml" />
+
+			</div>
+		
+			<!-- resizer -->
+			<if cond="!kiosk">
+				<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+			</if>
+
+	</layout>
+	
+
+			
+		
+			<!-- Layout with search  -->
+			<layout name="search" usew="default" useh="default" usepos="default" minw="1200" minh="900" >
+			
+			<!-- shape -->
+		    <shape x="0" y="0" src="shape1.png" />
+			<shape x="100%-8" src="shape2.png" />
+			<shape x="100%-8" y="100%-8" src="shape3.png" />
+			<shape y="100%-8" src="shape4.png" />
+
+			<!-- title bar: height: 23px -->
+			<include file="titlebar.xml" />
+			<!-- menu bar: height: 65px; -->
+			<include file="menusearch.xml" />
+			<!-- left side now playing-->
+			<include file="nowplaying.xml" />
+			<!-- workspace : with search -->
+			<div x="308" y="86" w="100%-630" h="100%-166" target="visrect">
+			<include file="workspace.xml" />
+			</div>
+			<!--more search-->
+			<include file="search.xml" />
+			<!-- controls -->
+			<div x="0" y="100%-80" w="100%" h="81">
+			<include file="control.xml" />
+			</div>
+
+			<!-- resizer -->
+			<if cond="!kiosk">
+				<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+			</if>
+
+			</layout>
+
+		    <!-- Layout with playlist  -->
+			<layout name="playlist" usew="default" useh="default" usepos="default" minw="1200" minh="900" >
+			
+			<!-- shape -->
+		    <shape x="0" y="0" src="shape1.png" />
+			<shape x="100%-8" src="shape2.png" />
+			<shape x="100%-8" y="100%-8" src="shape3.png" />
+			<shape y="100%-8" src="shape4.png" />
+
+			<!-- title bar: height: 23px -->
+			<include file="titlebar.xml" />
+			<!-- menu bar: height: 65px; -->
+			<include file="menu.xml" />
+			<!-- left side now playing-->
+			<include file="nowplaying.xml" />
+			<!-- workspace : with search -->
+			<div x="308" y="86" w="100%-830" h="100%-166" target="visrect">
+			<include file="workspace.xml" />
+			</div>
+			<!--playlist-->
+			<include file="playlist.xml" />
+			<!-- controls -->
+			<div x="0" y="100%-80" w="100%" h="81">
+			<include file="controlplaylist.xml" />
+			</div>
+
+			<!-- resizer -->
+			<if cond="!kiosk">
+				<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+			</if>
+
+			</layout>
+			
+			<!-- Layout with playlist view wide -->
+			<layout name="playlistwide" usew="default" useh="default" usepos="default" minw="1200" minh="900" >
+			
+			<!-- shape -->
+		    <shape x="0" y="0" src="shape1.png" />
+			<shape x="100%-8" src="shape2.png" />
+			<shape x="100%-8" y="100%-8" src="shape3.png" />
+			<shape y="100%-8" src="shape4.png" />
+
+			<!-- title bar: height: 23px -->
+			<include file="titlebar.xml" />
+			<!-- menu bar: height: 65px; -->
+			<include file="menu.xml" />
+			<!-- left side now playing-->
+			<include file="nowplaying.xml" />
+			<!-- workspace : with search -->
+			<div x="308" y="86" w="100%-920" h="100%-166" target="visrect">
+			<include file="workspace.xml" />
+			</div>
+			<!--playlist-->
+			<include file="playlistwide.xml" />
+			<!-- controls -->
+			<div x="0" y="100%-80" w="100%" h="81">
+			<include file="controlplaylist.xml" />
+			</div>
+
+			<!-- resizer -->
+			<if cond="!kiosk">
+				<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+			</if>
+
+			</layout>
+			
+			<!-- Layout with playlist view wide and large -->
+			<layout name="playlistwidelarge" usew="default" useh="default" usepos="default" minw="1200" minh="900" >
+			
+			<!-- shape -->
+		    <shape x="0" y="0" src="shape1.png" />
+			<shape x="100%-8" src="shape2.png" />
+			<shape x="100%-8" y="100%-8" src="shape3.png" />
+			<shape y="100%-8" src="shape4.png" />
+
+			<!-- title bar: height: 23px -->
+			<include file="titlebar.xml" />
+			<!-- menu bar: height: 65px; -->
+			<include file="menu.xml" />
+			<!-- left side now playing-->
+			<include file="nowplaying.xml" />
+			<!-- workspace : with search -->
+			<div x="308" y="86" w="100%-920" h="100%-166" target="visrect">
+			<include file="workspace.xml" />
+			</div>
+			<!--playlist-->
+			<include file="playlistwidelarge.xml" />
+			<!-- controls -->
+			<div x="0" y="100%-80" w="100%" h="81">
+			<include file="controlplaylist.xml" />
+			</div>
+
+			<!-- resizer -->
+			<if cond="!kiosk">
+				<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+			</if>
+
+			</layout>
+	
+			<!-- Layout with playlist view large -->
+			<layout name="playlistlarge" usew="default" useh="default" usepos="default" minw="1200" minh="900" >
+			
+			<!-- shape -->
+		    <shape x="0" y="0" src="shape1.png" />
+			<shape x="100%-8" src="shape2.png" />
+			<shape x="100%-8" y="100%-8" src="shape3.png" />
+			<shape y="100%-8" src="shape4.png" />
+
+			<!-- title bar: height: 23px -->
+			<include file="titlebar.xml" />
+			<!-- menu bar: height: 65px; -->
+			<include file="menu.xml" />
+			<!-- left side now playing-->
+			<include file="nowplaying.xml" />
+			<!-- workspace : with search -->
+			<div x="308" y="86" w="100%-830" h="100%-166" target="visrect">
+			<include file="workspace.xml" />
+			</div>
+			<!--playlist-->
+			<include file="playlistlarge.xml" />
+			<!-- controls -->
+			<div x="0" y="100%-80" w="100%" h="81">
+			<include file="controlplaylist.xml" />
+			</div>
+
+			<!-- resizer -->
+			<if cond="!kiosk">
+				<div x="100%-21" y="100%-21" w="21" h="21">
+				<img src="resizer.png" />
+				<resizer w="100%" h="100%" />
+			</div>
+			</if>
+
+			</layout>
+	
+	
+</skin>
+

@@ -1,0 +1,6 @@
+<div w="100%" h="23">
+	<img src="title-bg.png" w="100%" />
+	<if cond="kiosk">
+		<img x="10" y="5" src="title-menu.png" />
+	</if>
+</div>

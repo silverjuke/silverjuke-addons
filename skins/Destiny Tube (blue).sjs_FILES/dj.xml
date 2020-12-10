@@ -1,0 +1,153 @@
+
+<img x="0" y="0" src="1.png" />
+
+
+<!button x="45" y="62" src="18.2.png" srcindex="0" target="gotoA" />
+<!button x="same" y="same" src="18.2.png" srcindex="1" target="gotoB" />
+<!button x="same" y="same" src="18.2.png" srcindex="2" target="gotoC" />
+<!button x="same" y="same" src="18.2.png" srcindex="3" target="gotoD" />
+<!button x="same" y="same" src="18.2.png" srcindex="4" target="gotoE" />
+<!button x="same" y="same" src="18.2.png" srcindex="5" target="gotoF" />
+<!button x="same" y="same" src="18.2.png" srcindex="6" target="gotoG" />
+<!button x="same" y="same" src="18.2.png" srcindex="7" target="gotoH" />
+<!button x="same" y="same" src="18.2.png" srcindex="8" target="gotoI" />
+<!button x="same" y="same" src="18.2.png" srcindex="9" target="gotoJ" />
+<!button x="same" y="same" src="18.2.png" srcindex="10" target="gotoK" />
+<!button x="same" y="same" src="18.2.png" srcindex="11" target="gotoL" />
+<!button x="same" y="same" src="18.2.png" srcindex="12" target="gotoM" />
+<!button x="same" y="same" src="18.2.png" srcindex="13" target="gotoN" />
+<!button x="same" y="same" src="18.2.png" srcindex="14" target="gotoO" />
+<!button x="same" y="same" src="18.2.png" srcindex="15" target="gotoP" />
+<!button x="same" y="same" src="18.2.png" srcindex="16" target="gotoQ" />
+<!button x="same" y="same" src="18.2.png" srcindex="17" target="gotoR" />
+<!button x="same" y="same" src="18.2.png" srcindex="18" target="gotoS" />
+<!button x="same" y="same" src="18.2.png" srcindex="19" target="gotoT" />
+<!button x="same" y="same" src="18.2.png" srcindex="20" target="gotoU" />
+<!button x="same" y="same" src="18.2.png" srcindex="21" target="gotoV" />
+<!button x="same" y="same" src="18.2.png" srcindex="22" target="gotoW" />
+<!button x="same" y="same" src="18.2.png" srcindex="23" target="gotoX" />
+<!button x="same" y="same" src="18.2.png" srcindex="24" target="gotoY" />
+<!button x="same" y="same" src="18.2.png" srcindex="25" target="gotoZ" />
+<!button x="same" y="same" src="18.2.png" srcindex="26" target="goto0" />		
+<!button x="same" y="same" src="18.2.png" srcindex="27" target="gotocurr" />
+<!button x=75  y=62  src="11.2.png"srcindex="1" target="stop" />
+<!button x=same  y=same src="11.2.png"srcindex="0" target="play" />
+<!button x=same  y=same src="11.2.png"srcindex="2" target="pause" />
+<!box x="1181" y="80" w="60" h="22" fgcolor="#FFFFFF" id="playlisttotalnumber" /> 
+<!box x="1181" y="55" w="60" h="22" fgcolor="#FFFFFF" text="Songs" />  
+
+
+
+<img x="574" y="786" src="cover.png" />
+
+<button x="39" y="154" src="button2.png"srcindex="0" target="gotoA" />
+<button x="same" y="next+10" src="button2.png"srcindex="1" target="gotoB" />
+<button x="same" y="next+10" src="button2.png"srcindex="2" target="gotoC" />
+<button x="same" y="next+10" src="button2.png"srcindex="3" target="gotoD" />
+<button x="same" y="next+10" src="button2.png"srcindex="4" target="gotoE" />
+<button x="same" y="next+10" src="button2.png"srcindex="5" target="gotoF" />
+<button x="same" y="next+10" src="button2.png"srcindex="6" target="gotoG" />
+<button x="same" y="next+65" src="button2.png"srcindex="7" target="gotoH" />
+<button x="same" y="next+10" src="button2.png"srcindex="8" target="gotoI" />
+<button x="same" y="next+10" src="button2.png"srcindex="9" target="gotoJ" />
+<button x="same" y="next+10" src="button2.png"srcindex="10" target="gotoK" />
+<button x="same" y="next+10" src="button2.png"srcindex="11" target="gotoL" />
+<button x="same" y="next+10" src="button2.png"srcindex="12" target="gotoM" />
+<button x="same" y="next+10" src="button2.png"srcindex="13" target="gotoN" />
+
+<button x="1182" y="154" src="button2.png"srcindex="14" target="gotoO" />
+<button x="same" y="next+10" src="button2.png"srcindex="15" target="gotoP" />
+<button x="same" y="next+10" src="button2.png"srcindex="16" target="gotoQ" />
+<button x="same" y="next+10" src="button2.png"srcindex="17" target="gotoR" />
+<button x="same" y="next+10" src="button2.png"srcindex="18" target="gotoS" />
+<button x="same" y="next+10" src="button2.png"srcindex="19" target="gotoT" />
+<button x="same" y="next+10" src="button2.png"srcindex="20" target="gotoU" />
+<button x="same" y="next+65" src="button2.png"srcindex="21" target="gotoV" />
+<button x="same" y="next+10" src="button2.png"srcindex="22" target="gotoW" />
+<button x="same" y="next+10" src="button2.png"srcindex="23" target="gotoX" />
+<button x="same" y="next+10" src="button2.png"srcindex="24" target="gotoY" />
+<button x="same" y="next+10" src="button2.png"srcindex="25" target="gotoZ" />
+<button x="same" y="next+10" src="button2.png"srcindex="26" target="goto0" />
+<button x="same" y="next+10" src="button2.png"srcindex="27" target="gotocurr" />
+
+
+
+<button x="417" y="932" src="z_ctrl.png"srcindex="2" target="searchprev" onclick="if (player.time>10000){player.time-=10000;}else{player.time=0;}" />
+<button x="same+64" y="932" src="z_ctrl.png"srcindex="5" target="prev" />
+<button x="same+64" y="930" src="z_ctrl.png"srcindex="4" target="stop" />
+<button x="same+64" y="928" src="z_ctrl.png"srcindex="1" target="play" />
+<button x="same+64" y="930" src="z_ctrl.png"srcindex="0" target="pause" />
+<button x="same+64" y="932" src="z_ctrl.png"srcindex="6" target="next" />
+<button x="same+64" y="932" src="z_ctrl.png"srcindex="3" target="searchnext" onclick="if ((player.duration-player.time)>10100){player.time+=10000;}else{player.time=player.duration;}" />
+
+<button x="14" y="483"  src="button4.png"srcindex="0" target="workspaceLeft"/>
+<button x="1228" y="483" src="button4.png"srcindex="1" target="workspaceRight"/>
+<button x="610" y="14" src="button1.png"srcindex="3" target="workspaceUp"/>                                                                                                                                  
+<button x="610" y="972" src="button1.png"srcindex="2" target="workspaceDown"/>
+
+<scrollbar x=12 y=55 h=410 src="h1.png" target="workspacevscroll" />  
+<scrollbar x=12 y=555 h=410 src="h1.png" target="workspacevscroll" />  
+<scrollbar x=59 y=12 w=538 h=15 src="v1.png" target="workspacehscroll" /> 
+<scrollbar x=687 y=12 w=538 h=15 src="v1.png" target="workspacehscroll" /> 
+
+<scrollbar x=1253 y=55 h=410 src="h1.png" target="workspacevscroll" />  
+<scrollbar x=1253 y=555 h=410 src="h1.png" target="workspacevscroll" /> 
+<scrollbar x=59 y=997 w=538 h=15 src="v1.png" target="workspacehscroll" /> 
+<scrollbar x=687 y=997 w=538 h=15 src="v1.png" target="workspacehscroll" /> 
+
+<box x=572 y=784 h=134 w=134 target="displaycover" />
+<button x=570 y=782 src="button3.png" target="toggleView" />
+<box x="240" y="56" w="380" h="25" fgcolor="#FFFFFF" id="artist" />
+<box x="740" y="56" w="70" h="25" fgcolor="#FFFFFF" target="currtime" />
+<box x="240" y="101" w="380" h="24" fgcolor="#FFFFFF" id="title" />
+<box x="740" y="101" w="380" h="24" fgcolor="#FFFFFF" id="album" />
+
+
+<box x="150" y="56" w="50" h="25" fgcolor="#FFFFFF" text="Artist" /> 
+<box x="150" y="101" w="50" h="24" fgcolor="#FFFFFF" text="Title" /> 
+<box x="650" y="101" w="60" h="24" fgcolor="#FFFFFF" text="Album" /> 
+<box x="650" y="56" w="60" h="25" fgcolor="#FFFFFF" text="Time" /> 
+
+<input x="846" y=58 w=198 h=18 bgcolor=#383838 fgcolor=#FFFFFF />
+    <!box x="846" y=next w=same h=12 fgcolor=#40BCFF target="searchinfo" />
+
+
+
+
+    
+<!scrollbar x="28" y="26" h="13" w="1226" src="9.2.png" target="seek" hideifunused=1 />
+
+<box x="120" y="791" w="425" h="16" fgcolor="#FFFFFF" target="line00" />
+<color fgcolor=#40BCFF target="selection" /> 
+</box>
+<box x="same" y="next+20" w="same" h="same" fgcolor="#FFFFFF" target="line01" />
+<color fgcolor=#40BCFF target="selection" /> 
+</box> 
+<box x="same" y="next+20" w="same" h="same" fgcolor="#FFFFFF" target="line02" />
+<color fgcolor=#40BCFF target="selection" /> 
+</box>
+<box x="737" y="791" w="same" h="same" fgcolor="#FFFFFF" target="line03" /> 
+<color fgcolor=#40BCFF target="selection" /> 
+</box>
+<box x="same" y="next+20" w="same" h="same" fgcolor="#FFFFFF" target="line04" />
+<color fgcolor=#40BCFF target="selection" /> 
+</box>
+<box x="same" y="next+20" w="same" h="same" fgcolor="#FFFFFF" target="line05" />
+<color fgcolor=#40BCFF target="selection" /> 
+</box> 
+
+<button x="541" y="892" src="klein.png"srcindex="0" target="displayup"/>
+<button x="711" y="892" src="klein.png"srcindex="1" target="displaydown"/>   
+<button x=1105 y=53 src="klein.png" srcindex="2" onclick="program.search=''" />
+<button x=1075 y=53 src="klein.png" srcindex="1" target="searchbutton" cmw="19" />    
+   
+<!button x=110  y="908"  src="button2.png" srcindex="28" target="zoomout" />
+<!button x="same+49"  y="908"  src="button2.png" srcindex="28" target="zoomnormal" />
+<!button x="same+49"  y="908"  src="button2.png" srcindex="28" target="zoomin" />
+<!img x="120" y="909" src="bild5.png" /> 
+<!button x=910  y="908"  src="button2.png" srcindex="28" target="voldown" />
+<!button x="same+49"  y="908"  src="button2.png" srcindex="28" target="mute" />
+<!button x="same+49"  y="908"  src="button2.png" srcindex="28" target="volup" />    
+<!img x="920" y="909" src="bild6.png" />     
+        
+     

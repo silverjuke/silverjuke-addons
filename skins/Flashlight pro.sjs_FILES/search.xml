@@ -1,0 +1,193 @@
+			<!-- more search -->
+			<div x="100%-308" y="86" w="300" h="100%-160" />
+			
+			<img x="100%" y="same" h="100%" src="outer-bg-right.png" />
+			<box x="-8" y="same" w="308" h="100%" bgcolor="#000000" />
+			
+
+			
+			<!-- Buttons: top, dwon, up, end-->
+			<button onclick="QuickIndexFirst()" src="clickup.png" srcindex="0" x="-2" y="4" w="50" h="25" />
+			<button onclick="QuickIndexNext()" src="clickup.png" srcindex="1" x="next+1" y="same" w="same" h="same" />
+			<box x="next" y="same+5" w="97" h="16" fgcolor="#ffffff" hicolor="#ffffff" id="quickindexpos" />
+			<button onclick="QuickIndexPrev()" src="clickup.png" srcindex="2" x="next-1" y="same-5" w="50" h="25" />
+			<button onclick="QuickIndexLast()" src="clickup.png" srcindex="3" x="next+1" y="same" w="same" h="same" />
+			<img x="-8" y="next+2" w="100%+8" src="outer-horizontal.png" />
+			
+			<!-- lines in variable colours-->
+			<img x="0" y="next+2" w="100%" h="20" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+			<img x="same" y="next" w="same" h="same" src="click1.png" />
+			<img x="same" y="next" w="same" h="same" src="click.png" />
+					
+			<img x="same-8" y="next+4" w="same+8" src="outer-horizontal.png" />
+			</div>	
+				
+			
+			<!-- results -->
+
+			<div x="100%-308" y="125" w="290" h="501">
+			<box x="23" y="5" w="272" h="16" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex0" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(0)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex1" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(1)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex2" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(2)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex3" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(3)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex4" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(4)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex5" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(5)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex6" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(6)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex7" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(7)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex8" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(8)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex9" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(9)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex10" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(10)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex11" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(11)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex12" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(12)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex13" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(13)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex14" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(14)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex15" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(15)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex16" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(16)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex17" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(17)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex18" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(18)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex19" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(19)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex20" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(20)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex21" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(21)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex22" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(22)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f9ebba" hicolor="#f9ebba" id="quickindex23" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(23)" />
+			<box x="same" y="same+20" w="same" h="same" fgcolor="#f4eed9" hicolor="#f4eed9" id="quickindex24" />
+			<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickIndexSelect(24)" />
+			
+			
+			
+			
+			
+	
+			<!-- button for result -->
+	
+			<button x="-4" y="2" src="clickbutton1.png" onclick="QuickIndexSelect(0)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(1)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(2)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(3)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(4)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(5)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(6)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(7)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(8)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(9)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(10)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(11)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(12)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(13)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(14)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(15)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(16)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(17)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(18)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(19)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(20)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(21)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(22)" />
+			<button x="same" y="same+20" src="clickbutton.png" onclick="QuickIndexSelect(23)" />
+			<button x="same" y="same+20" src="clickbutton1.png" onclick="QuickIndexSelect(24)" />	
+			
+			
+			</div>
+
+			<!-- buttons: clear, preset, config-->
+			<button x="100%-312" y="next+18" src="click-select.png" srcindex="0" onclick="QuickFilterClear(true)" />
+			<button x="next+94" y="same" src="click-select.png" srcindex="1" onclick="QuickFilterModePreset()" />
+			<button x="next+27" y="same" src="click-select.png" srcindex="2" target="advsearch" />
+			<img x="100%-316" y="next+3" w="308" src="outer-horizontal.png" />
+
+			<!-- select artist-->
+			<div x="100%-239" y="next+3" w="227" h="24" />
+				<button x="-72" y="0" src="click-art.png" srcindex="0" onclick="QuickFilterMode(0)" />
+				<include src="lcd.xml" />
+				<box x="5" y="4" w="216" h="16" fgcolor="#141414" hicolor="#141414" id="quick0" />
+				<button x="5" y="same" w="same" h="same" src="blank.png" onclick="QuickFilterMode(0)" />
+    
+			</div>
+			
+			<!-- select genre -->
+			<div x="100%-239" y="next+4" w="227" h="24" />
+				<button x="-72" y="0" src="click-art.png" srcindex="1" onclick="QuickFilterMode(1)" />
+				<include src="lcd.xml" />
+				<box x="5" y="4" w="210" h="16" fgcolor="#141414" hicolor="#141414" id="quick1" />
+				<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickFilterMode(1)" />
+			</div>
+			
+			<!-- select year from -->
+			<div x="100%-239" y="next+4" w="73" h="24" />
+				<button x="-72" y="0" src="click-art.png" srcindex="2" onclick="QuickFilterMode(2)" />
+				<include src="lcd.xml" />
+				<box x="5" y="4" w="55" h="16" fgcolor="#141414" hicolor="#141414" id="quick2" />
+				<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickFilterMode(2)" />
+			</div>
+			
+			<!-- select year to -->
+			<div x="next+80" y="same" w="73" h="24" />
+				<button x="-72" y="0" src="click-art.png" srcindex="3" onclick="QuickFilterMode(3)" />
+				<include src="lcd.xml" />
+				<box x="5" y="4" w="55" h="16" fgcolor="#141414" hicolor="#141414" id="quick3" />
+				<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickFilterMode(3)" />
+			</div>
+			
+			<!-- select rating from -->
+			<div x="100%-239" y="next+4" w="73" h="24" />
+				<button x="-72" y="0" src="click-art.png" srcindex="4" onclick="QuickFilterMode(4)" />
+				<include src="lcd.xml" />
+				<box x="5" y="4" w="55" h="16" fgcolor="#141414" hicolor="#141414" id="quick4" />
+				<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickFilterMode(4)" />
+			</div>
+			
+			<!-- select rating to -->
+			<div x="next+80" y="same" w="73" h="24" />
+				<button x="-72" y="0" src="click-art.png" srcindex="5" onclick="QuickFilterMode(5)" />
+				<include src="lcd.xml" />
+				<box x="5" y="4" w="55" h="16" fgcolor="#141414" hicolor="#141414" id="quick5" />
+				<button x="same" y="same" w="same" h="same" src="blank.png" onclick="QuickFilterMode(5)" />
+			</div> 
+			<img x="100%-316" y="next+4" w="308" src="outer-horizontal.png" />
+			

@@ -1,0 +1,19 @@
+<--DJ workspace -->
+
+
+    
+       <workspace x=97 w=1086 y=138 h=640>
+        <color bgcolor=#0000CC fgcolor=#40BCFF hicolor="#00FF00"target="title1" />
+        <color bgcolor=#005432 fgcolor=#0073BF hicolor="#00FF00"target="title2" />
+        <color bgcolor=#005432 fgcolor=#0073BF hicolor="#00FF00"target="title3" />
+        <color bgcolor=#0000CC fgcolor=#0073BF target="verttext" />
+        <color bgcolor=#000066 fgcolor=#0073BF target="stubtext" />
+
+        <color bgcolor=#001320 fgcolor=#EEEEEE hicolor="#005884"target="normal" />
+        <color bgcolor=#002027 fgcolor=#CCCCCC hicolor="#005884"target="normalodd" />
+        <color bgcolor=#002440 fgcolor=#EEEEEE hicolor="#40BCFF"target="selection" />
+        <color bgcolor=#003864 fgcolor=#CCCCCC hicolor="#40BCFF"target="selectionodd" />
+    </workspace>
+
+
+        

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+
+
+<skin debugoutline="0"  name="Mijuke 2" about="Skin created by R.K. (Kayyak).">
+<tooltips bgcolor="#E6E6E6" fgcolor="#232323" bordercolor="#000000" />
+<layout name="a" minw="670" minh="300" maxw="1280" maxh="1280">
+        <include src="2.xml" />
+        <include src="1.xml" />
+       </layout>
+
+
+</skin>
+
+
+
+
